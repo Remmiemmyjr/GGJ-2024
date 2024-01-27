@@ -20,13 +20,13 @@ public class CheckPoint : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Ignore objects other than the player
-        if (other.tag != "Player" && !checkPointReached)
+        if (other.tag != "Player" && checkPointReached)
             return;
 
-        // Snapshot the velocity and acceleration on entrance (could do static values as well)
+        // TODO: Snapshot the velocity and acceleration of the player
 
 
         // Snapshot the time at the checkpoint
-        GameObject.FindGameObjectWithTag("Timer");
+        time = GameObject.FindGameObjectWithTag("Timer").GetComponent<Timer>().GetTime();
     }
 }
