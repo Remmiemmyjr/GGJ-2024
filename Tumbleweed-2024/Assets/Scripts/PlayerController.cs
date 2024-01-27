@@ -9,37 +9,59 @@ public class PlayerController : MonoBehaviour
     Vector2 dir;
     Vector3 moveVec;
 
-    float gravity = -20f;
+    float speed;
 
     [SerializeField]
     float accelerationRate = 30.0f;
     [SerializeField]
     float maxSpeed = 10.0f;
-    float speed;
+
 
     [SerializeField]
     float speedBoost = 50.0f;
     [SerializeField]
     float speedBoostTime = 1.0f;
+    float currTime;
+
 
     [SerializeField]
     float jumpBoostForce = 3.0f;
 
     bool isBoosting;
-
+    bool canBoost;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         speed = accelerationRate;
+        currTime = speedBoostTime;
+        canBoost = true;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         MovePlayer();
-        //rb.AddForce(Vector3.up * gravity, ForceMode.Acceleration);
+    }
+
+
+    private void Update()
+    {
+        if (isBoosting)
+        {
+            canBoost = false;
+            if (currTime > 0)
+            {
+                currTime -= Time.deltaTime;
+            }
+            else if (currTime <= 0)
+            {
+                isBoosting = false;
+                canBoost = true;
+                currTime = speedBoostTime;
+            }
+        }
     }
 
     public void OnMovementInput(InputAction.CallbackContext ctx)
@@ -49,7 +71,11 @@ public class PlayerController : MonoBehaviour
 
     public void OnSpeedBoostInput(InputAction.CallbackContext ctx)
     {
-        //StartCoroutine("SpeedBoost");
+        if (canBoost)
+        {
+            isBoosting = true;
+            rb.velocity = new Vector3(rb.velocity.x * speedBoost, rb.velocity.y, rb.velocity.z * speedBoost);
+        }
     }
 
     public void OnJumpBoostInput(InputAction.CallbackContext ctx)
