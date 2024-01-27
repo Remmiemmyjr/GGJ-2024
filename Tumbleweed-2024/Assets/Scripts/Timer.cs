@@ -30,4 +30,14 @@ public class Timer : MonoBehaviour
         // Format the timer and return
         return string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds);
     }
+
+    public float GetTime()
+    {
+        return elapsedTime;
+    }
+
+    public void SetTime(float timeToSet)
+    {
+        elapsedTime = timeToSet;
+    }
 }
