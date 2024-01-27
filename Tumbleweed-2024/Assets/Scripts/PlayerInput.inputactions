@@ -6,9 +6,27 @@
             "id": "ea2e625c-74e7-41ef-ac2f-9dd3f83aa654",
             "actions": [
                 {
-                    "name": "New action",
-                    "type": "Button",
+                    "name": "Move",
+                    "type": "Value",
                     "id": "8f992bd4-c2a1-4901-a77a-48c3dabc6a77",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Speed Boost",
+                    "type": "Button",
+                    "id": "4df8b7d4-0b13-44aa-966c-f7aac2a87a01",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump Boost",
+                    "type": "Button",
+                    "id": "d3e20ecf-bfc2-476e-94b6-36878c14718a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -17,13 +35,79 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "7f9248e8-cafd-40f9-95a6-ad6fddb5b4ce",
-                    "path": "",
+                    "name": "2D Vector",
+                    "id": "00511b4b-da2e-4473-8b25-d5eb7ba03582",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "b8365e0e-fe7e-4894-9ad5-f702f8c638af",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "98aae9ae-6b8f-4b30-8443-831fb326be3c",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "d392974b-bd44-411c-af2c-bc9a124c975b",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "d96c1549-982e-4ecf-920a-9055fb9573c5",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "5f4e21ab-169b-4f5e-8d19-954931968704",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Speed Boost",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b3db9fb-c7c7-4931-aa37-1c89f6c0d679",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump Boost",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
