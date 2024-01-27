@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a2c85c9735a53a40b5dfd55db3383600
     GuidInternal: 
-    m_lastTime: -8584952815937975024
-    List: []
+    m_lastTime: -8584952777738161248
+    List:
+    - name: MainSoundbank
+      guid: 5f3883a25fbba94994c666a935ff9a0d
+      id: 534561221
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a2c85c9735a53a40b5dfd55db3383600
+      - ElementName: MainSoundbank
+        ObjectType: 7
+        guid: 5f3883a25fbba94994c666a935ff9a0d
+      Path: SoundBanks\Default Work Unit\MainSoundbank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 483dbdc69122154d9262f224082e74b2
     GuidInternal: 
-    m_lastTime: -8584952815939130144
-    List: []
+    m_lastTime: -8584952779318765788
+    List:
+    - name: Test_Yoda
+      guid: c1dfc2472552294a9911ab0f04d19fe6
+      id: 4205244797
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 483dbdc69122154d9262f224082e74b2
+      - ElementName: Test_Yoda
+        ObjectType: 3
+        guid: c1dfc2472552294a9911ab0f04d19fe6
+      Path: Events\Default Work Unit\Test_Yoda
+      maxAttenuation: 0
+      maxDuration: 1.2871875
+      minDuration: 1.2871875
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -139,7 +170,7 @@ MonoBehaviour:
     m_lastTime: -8584952815938165009
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000b0000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

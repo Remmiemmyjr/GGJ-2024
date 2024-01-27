@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{75CC8460-6571-4B53-BF27-93DA9FD35C0D}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{75CC8460-6571-4B53-BF27-93DA9FD35C0D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{75CC8460-6571-4B53-BF27-93DA9FD35C0D}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Utility" ID="{065D5C92-3190-42E1-A1C1-3DE9FC1C3C35}" ShortID="870750281">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Lego yoda death sound" ID="{0B8FF6E7-1BBF-4871-90CE-6A2743219DC7}" ShortID="159045765">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lego yoda death sound" ID="{A58E72F6-C330-42E8-8976-EB619BE6DB0A}">
+									<Language>SFX</Language>
+									<AudioFile>Lego yoda death sound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="569312001"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lego yoda death sound" ID="{A58E72F6-C330-42E8-8976-EB619BE6DB0A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

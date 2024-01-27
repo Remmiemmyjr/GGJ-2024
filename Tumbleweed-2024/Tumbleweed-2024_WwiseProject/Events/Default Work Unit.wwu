@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C6BD3D48-2291-4D15-9262-F224082E74B2}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{C6BD3D48-2291-4D15-9262-F224082E74B2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C6BD3D48-2291-4D15-9262-F224082E74B2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Test_Yoda" ID="{47C2DFC1-5225-4A29-9911-AB0F04D19FE6}">
+					<ChildrenList>
+						<Action Name="" ID="{EF3FCE61-46F2-4B3A-B026-70C8A17F1015}" ShortID="618238691">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lego yoda death sound" ID="{0B8FF6E7-1BBF-4871-90CE-6A2743219DC7}" WorkUnitID="{75CC8460-6571-4B53-BF27-93DA9FD35C0D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

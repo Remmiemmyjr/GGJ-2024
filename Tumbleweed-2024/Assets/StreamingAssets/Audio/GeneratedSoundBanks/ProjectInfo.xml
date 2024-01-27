@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="Tumbleweed-2024_WwiseProject" GUID="{32E539E0-28B0-4737-9412-C498D884C0AA}" Generator="2022.1.6.8263"/>
+	<CacheRoot>../../../../Tumbleweed-2024_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{0DAE4F07-AC02-4D77-A82E-B584DC9ED72B}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../Tumbleweed-2024_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{B4590A36-9FAD-4B64-8C6C-BCB132BA4A10}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../Tumbleweed-2024_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{F3BF9DD3-82B0-4DAE-98D0-69ED9FBBC9D2}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{2AEADD77-9EDC-ADE6-8248-1AD78EB22211}</FileHash>
+</ProjectInfo>
