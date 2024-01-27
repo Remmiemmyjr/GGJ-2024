@@ -149,7 +149,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271064136}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 877ed39b0f91abb47a41da7dcd5abbe1, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -260,8 +260,8 @@ Rigidbody:
   m_GameObject: {fileID: 371633345}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 0.1
+  m_AngularDrag: 0.1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -275,9 +275,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 1
 --- !u!135 &371633347
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -376,6 +376,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bba398e24b92d45a3db6bd9aaebc3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  accelerationRate: 30
+  maxSpeed: 15
+  speedBoost: 50
+  speedBoostTime: 1
+  jumpBoostForce: 9
 --- !u!114 &371633352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,11 +424,35 @@ MonoBehaviour:
     m_ActionId: 8f992bd4-c2a1-4901-a77a-48c3dabc6a77
     m_ActionName: Gameplay/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 371633351}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnSpeedBoostInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 4df8b7d4-0b13-44aa-966c-f7aac2a87a01
     m_ActionName: Gameplay/Speed Boost[/Mouse/leftButton]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 371633351}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnJumpBoostInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d3e20ecf-bfc2-476e-94b6-36878c14718a
     m_ActionName: Gameplay/Jump Boost[/Mouse/rightButton]
   m_NeverAutoSwitchControlSchemes: 0
@@ -567,14 +596,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325636409}
-  m_LocalRotation: {x: 0.31214505, y: -0, z: -0, w: 0.9500345}
-  m_LocalPosition: {x: 0, y: 7, z: -10}
+  m_LocalRotation: {x: 0.3113908, y: -0, z: -0, w: 0.950282}
+  m_LocalPosition: {x: 0, y: 12.53, z: -17.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 36.377, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 36.286, y: 0, z: 0}
 --- !u!114 &1325636413
 MonoBehaviour:
   m_ObjectHideFlags: 0
