@@ -14,6 +14,14 @@ public class PlayerController : MonoBehaviour
     float speed;
     float normalFOV;
 
+    [Header("--------AUDIO--------")]
+    public AudioSource Gun;
+    public AudioClip[] gunClips;
+    public AudioSource Move;
+    public AudioClip[] moveLoops;
+    public AudioSource Hat;
+
+
     [Header("--------VISUALS--------")]
     public Animator reloadUIAnimator;
     public ParticleSystem dustParticles;
@@ -146,6 +154,8 @@ public class PlayerController : MonoBehaviour
             bullets -= 1;
             gunParticles.Play();
             Debug.Log(bullets);
+            //AkSoundEngine.PostEvent("Play_Gunshot", this.gameObject);
+            Gun.PlayOneShot(gunClips[Random.Range(0, gunClips.Length)]);
 
             reloadUIAnimator.SetInteger("RevolverAmmo", bullets);
         }
@@ -169,6 +179,8 @@ public class PlayerController : MonoBehaviour
             bullets -= 1;
             gunParticles.Play();
             Debug.Log(bullets);
+            //AkSoundEngine.PostEvent("Play_Gunshot", this.gameObject);
+            Gun.PlayOneShot(gunClips[Random.Range(0, gunClips.Length)]);
 
             reloadUIAnimator.SetInteger("RevolverAmmo", bullets);
         }
@@ -253,10 +265,18 @@ public class PlayerController : MonoBehaviour
     void CreateDustParticles()
     {
         dustParticles.Play();
+        //AkSoundEngine.PostEvent("Play_Movement", this.gameObject);
+        //AkSoundEngine.PostEvent("Play_HatLoop", this.gameObject);
+        //moveLoopSound.Play();
+        //hatLoopSound.Play();
     }
     void StopDustParticles()
     {
         dustParticles.Stop();
+        //AkSoundEngine.PostEvent("Stop_HatLoop", this.gameObject);
+        //AkSoundEngine.PostEvent("Stop_Movement", this.gameObject);
+        //moveLoopSound.Stop();
+        //hatLoopSound.Stop();
     }
 
     public void ResetPlayer()
