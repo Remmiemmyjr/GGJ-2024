@@ -24,10 +24,10 @@ public class PlayerController : MonoBehaviour
     public float reloadTime = 2.0f;
 
     [SerializeField]
-    float accelerationRate = 45.0f;
+    float accelerationRate = 100.0f;
     [SerializeField]
     float maxSpeed = 20.0f;
-    public float smoothDamp = 0.99f;
+    public float smoothDamp = 0.95f;
 
     [SerializeField]
     float speedBoost = 50.0f;
@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     float currTime;
 
     [SerializeField]
-    float jumpBoostForce = 15.0f;
+    float jumpBoostForce = 20.0f;
     float jumpCoolDown = 0.25f;
     float lastJumpTime = -1f;
 
