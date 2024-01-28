@@ -416,6 +416,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 23.817, y: 95.09, z: 0}
+--- !u!95 &145357680 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 892033766946390984, guid: e7964ba0ad5d1344babeeb8ffb168233,
+    type: 3}
+  m_PrefabInstance: {fileID: 1478103491}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &164668067
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,12 +2514,12 @@ PrefabInstance:
     - target: {fileID: 1542032376893617962, guid: e7964ba0ad5d1344babeeb8ffb168233,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.006941
+      value: 11.915028
       objectReference: {fileID: 0}
     - target: {fileID: 1542032376893617962, guid: e7964ba0ad5d1344babeeb8ffb168233,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.098935
+      value: -9.098936
       objectReference: {fileID: 0}
     - target: {fileID: 1682288078399525432, guid: e7964ba0ad5d1344babeeb8ffb168233,
         type: 3}
@@ -2598,12 +2604,12 @@ PrefabInstance:
     - target: {fileID: 4636963557825979129, guid: e7964ba0ad5d1344babeeb8ffb168233,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.006941
+      value: 11.915028
       objectReference: {fileID: 0}
     - target: {fileID: 4636963557825979129, guid: e7964ba0ad5d1344babeeb8ffb168233,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.098935
+      value: -9.098936
       objectReference: {fileID: 0}
     - target: {fileID: 8286937084423157359, guid: e7964ba0ad5d1344babeeb8ffb168233,
         type: 3}
@@ -2755,6 +2761,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2012305781829371007, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
         type: 3}
+      propertyPath: reloadTime
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012305781829371007, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
+        type: 3}
       propertyPath: smoothDamp
       value: 0.95
       objectReference: {fileID: 0}
@@ -2773,6 +2784,11 @@ PrefabInstance:
       propertyPath: accelerationRate
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 2012305781829371007, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
+        type: 3}
+      propertyPath: reloadUIAnimator
+      value: 
+      objectReference: {fileID: 145357680}
     - target: {fileID: 4124864198511699467, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
         type: 3}
       propertyPath: m_RootOrder

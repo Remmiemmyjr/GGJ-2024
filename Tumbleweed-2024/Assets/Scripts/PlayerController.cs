@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     float speed;
     float normalFOV;
 
-    public float reloadTime = 2.0f;
+    public float reloadTime = 3.0f;
 
     [SerializeField]
     float accelerationRate = 100.0f;
