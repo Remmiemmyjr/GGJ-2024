@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,9 +8,11 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody rb;
     Vector3 currMoveVec;
-    Coroutine? reloadCo;
+    Coroutine reloadCo;
 
-    public Transform Camera;
+    public CinemachineVirtualCamera cmvCam;
+    float rotDir;
+    public float rotSpeed;
 
     public int maxBullets = 6;
     [HideInInspector]
@@ -81,6 +84,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void LateUpdate()
+    {
+        RotateCamera();
+    }
+
     public void OnMovementInput(InputAction.CallbackContext ctx)
     {
         dirVal = ctx.ReadValue<float>();
@@ -88,7 +96,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnSpeedBoostInput(InputAction.CallbackContext ctx)
     {
-        if(bullets <= 0) return;
+        if (bullets <= 0) return;
         if (Time.realtimeSinceStartup - lastJumpTime < jumpCoolDown) return;
 
 
@@ -99,7 +107,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x * speedBoost, rb.velocity.y, rb.velocity.z * speedBoost);
 
             lastJumpTime = Time.realtimeSinceStartup;
-            
+
             // BULLETS
             bullets -= 1;
             Debug.Log(bullets);
@@ -120,18 +128,27 @@ public class PlayerController : MonoBehaviour
             Debug.Log(bullets);
         }
     }
+    public void OnRotateInput(InputAction.CallbackContext ctx)
+    {
+        rotDir = ctx.ReadValue<float>();
+    }
 
     void MovePlayer()
     {
         currMoveVec = new Vector3(rb.velocity.x, 0, rb.velocity.z);
 
-        rb.AddForce((Camera.forward * dirVal) * speed);
-        if(currMoveVec.magnitude > maxSpeed && !isSpeedBoosting)
+        rb.AddForce((cmvCam.transform.forward * dirVal) * speed);
+        if (currMoveVec.magnitude > maxSpeed && !isSpeedBoosting)
         {
             currMoveVec = currMoveVec.normalized * maxSpeed;
             Vector3 newVel = new Vector3(currMoveVec.x, rb.velocity.y, currMoveVec.z);
             rb.velocity = newVel;
         }
+    }
+
+    void RotateCamera()
+    {
+        cmvCam.transform.RotateAround(gameObject.transform.position, Vector3.up, rotDir * rotSpeed);
     }
 
     IEnumerator ReloadGun()
