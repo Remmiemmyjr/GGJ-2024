@@ -42,6 +42,14 @@ public class MainMenuManager : MonoBehaviour
     {
         cameraTargetRotation = (float)CamRotationState.BOARD_SETTINGS;
     }
+    public void CreditsButton()
+    {
+        cameraTargetRotation = (float)CamRotationState.BOARD_CREDITS;
+    }
+    public void ReturnButton()
+    {
+        cameraTargetRotation = (float)CamRotationState.BOARD_MAIN;
+    }
 
     public void ReturnMenu()
     {
