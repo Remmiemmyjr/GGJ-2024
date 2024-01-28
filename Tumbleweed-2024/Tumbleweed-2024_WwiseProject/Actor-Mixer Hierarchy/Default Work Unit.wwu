@@ -37,6 +37,2098 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="UI" ID="{053D2F39-636B-4218-9D32-772795C8DBD2}" ShortID="584210951">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="UI" ID="{872F29A4-CE62-4E46-89E3-B8330354642C}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="UI_Hover" ID="{E556E0D8-E777-46A6-89FC-49F59EBDAF12}" ShortID="319667390">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="TS24_UI_Hover_01" ID="{963C8730-2ADD-4BBD-B4D0-2C919035C65C}" ShortID="494503529">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Hover_01" ID="{22D47772-36D1-4E3F-9C44-E29B664214FD}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0834118300889209"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.314642093246816"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.136204127613554"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.629284186493631"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Hover_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="735479898"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Hover_01" ID="{22D47772-36D1-4E3F-9C44-E29B664214FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Hover_02" ID="{A01F2467-25C7-40BE-AF52-1545E7D667F7}" ShortID="119955849">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Hover_02" ID="{B62176BA-9DE2-4CF0-992F-D2924F0C917A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.104395097332372"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.117444484498918"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.217489786109108"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.676393234799327"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Hover_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="543588563"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Hover_02" ID="{B62176BA-9DE2-4CF0-992F-D2924F0C917A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Hover_03" ID="{87737703-FBEF-4BB3-9860-9D7CD60C112C}" ShortID="573997093">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Hover_03" ID="{8B759BFD-8637-4613-BC7C-2BCF88D5EEA3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0376690699351118"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.160093547224225"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.280948479932708"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.734546863734679"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Hover_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="743002615"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Hover_03" ID="{8B759BFD-8637-4613-BC7C-2BCF88D5EEA3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_Select" ID="{F93748DC-B564-4A5B-B065-26060700B5FA}" ShortID="450706544">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="TS24_UI_Select_01" ID="{218266D6-EEC3-44D0-A4F5-8636B1ECE07C}" ShortID="1404596">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Select_01" ID="{F951AC73-1541-4C8C-9F5D-5D74EE1B668F}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Select_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="581046611"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Select_01" ID="{F951AC73-1541-4C8C-9F5D-5D74EE1B668F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Select_02" ID="{ACB94155-A113-49D5-9955-EFE3C3A721DB}" ShortID="729136624">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Select_02" ID="{372EDD60-645F-475E-ADB4-9C69F9A12C5B}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Select_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="705852772"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Select_02" ID="{372EDD60-645F-475E-ADB4-9C69F9A12C5B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Select_03" ID="{3BC42977-7C37-4350-8AF2-54796CD1FFB9}" ShortID="356874704">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Select_03" ID="{5892ED0C-81F0-4F9A-A440-B21DCB1DC2EF}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Select_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="289449609"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Select_03" ID="{5892ED0C-81F0-4F9A-A440-B21DCB1DC2EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Select_04" ID="{CFDD40E4-D172-4B34-AFCB-F95CAC0F6895}" ShortID="519076757">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Select_04" ID="{030A28C8-577F-4C37-B4C1-5CA3C00CEAA8}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Select_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="806233684"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Select_04" ID="{030A28C8-577F-4C37-B4C1-5CA3C00CEAA8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Select_05" ID="{C0A1DA08-AE34-4E93-BDEA-603D4770457E}" ShortID="655882244">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Select_05" ID="{0F4E33D9-8FF5-4926-AFD9-CEFE02D04F14}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Select_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="163010067"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Select_05" ID="{0F4E33D9-8FF5-4926-AFD9-CEFE02D04F14}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Select_06" ID="{6FF432A6-D158-4F42-A672-6CEE602DFB29}" ShortID="266118979">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Select_06" ID="{FE11FCA2-52B3-473F-AD41-47B48B6418C7}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Select_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="906413869"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Select_06" ID="{FE11FCA2-52B3-473F-AD41-47B48B6418C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Reload" ID="{1BCBEBCE-ED82-4306-86F6-5330A58901B8}" ShortID="1001595425">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="TS24_Reload_01" ID="{E41751BE-B577-4636-B876-808D4491B61E}" ShortID="633225831">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Reload_01" ID="{CA073F23-9BB1-4568-8A0D-EE2A51EBC000}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Reload_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="177056084"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Reload_01" ID="{CA073F23-9BB1-4568-8A0D-EE2A51EBC000}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Reload_02" ID="{16C5DC95-1D0A-43D3-ADE0-D5C563D6BD5E}" ShortID="502013198">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Reload_02" ID="{B57DC3BC-6E92-4B7D-B631-BCFEA7F2541C}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Reload_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="151828596"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Reload_02" ID="{B57DC3BC-6E92-4B7D-B631-BCFEA7F2541C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Checkpoint" ID="{61C003E4-FFD6-475F-BF16-50673EE87301}" ShortID="810782198">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="TS24_UI_Checkpoint_01" ID="{B26F17BC-B8FD-463B-BBE4-3265604485B9}" ShortID="878220400">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Checkpoint_01" ID="{EA22E745-784E-4A29-BDBF-7578B0395027}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Checkpoint_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="896629542"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Checkpoint_01" ID="{EA22E745-784E-4A29-BDBF-7578B0395027}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Checkpoint_02" ID="{68E99E72-35F6-4766-AB81-6C57DDC24E82}" ShortID="975078774">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Checkpoint_02" ID="{5075E2EB-9316-4ED0-B927-2C9CCB8FE374}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Checkpoint_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="376648722"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Checkpoint_02" ID="{5075E2EB-9316-4ED0-B927-2C9CCB8FE374}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Checkpoint_03" ID="{B548DE7B-8427-4C52-A39F-64BB2093470C}" ShortID="860736070">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Checkpoint_03" ID="{24A7063F-50E1-402F-8042-BC9C5883088C}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Checkpoint_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="253988033"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Checkpoint_03" ID="{24A7063F-50E1-402F-8042-BC9C5883088C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Checkpoint_04" ID="{B7F911D1-E8A8-40FE-8287-2E86B408BFA1}" ShortID="1045727464">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Checkpoint_04" ID="{85A92481-6DC7-411E-8DA6-158550A4BF85}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Checkpoint_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="165370341"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Checkpoint_04" ID="{85A92481-6DC7-411E-8DA6-158550A4BF85}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Checkpoint_05" ID="{B17215BF-69DE-40E0-AB02-BF243069312A}" ShortID="844137303">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Checkpoint_05" ID="{00322AF5-4DCA-4D96-9362-92704C78751C}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Checkpoint_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="949947328"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Checkpoint_05" ID="{00322AF5-4DCA-4D96-9362-92704C78751C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Checkpoint_06" ID="{10F1C2AC-AE87-4608-8F03-76F5528D9977}" ShortID="554415468">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Checkpoint_06" ID="{4CBF79EB-2A35-4D42-87CA-BD5AADB7A6E6}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Checkpoint_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="335278338"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Checkpoint_06" ID="{4CBF79EB-2A35-4D42-87CA-BD5AADB7A6E6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Checkpoint_07" ID="{20FB1CD4-46A0-4ECD-93E5-5EF28E21D601}" ShortID="1052644839">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Checkpoint_07" ID="{620BF979-BA72-4817-B70D-50BD376644E0}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Checkpoint_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="968533029"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Checkpoint_07" ID="{620BF979-BA72-4817-B70D-50BD376644E0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Checkpoint_08" ID="{529E39B4-D856-433E-8562-A02CDA017871}" ShortID="587961822">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Checkpoint_08" ID="{A2837DF1-3198-4087-9109-16C3A8563596}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Checkpoint_08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="597550918"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Checkpoint_08" ID="{A2837DF1-3198-4087-9109-16C3A8563596}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_UI_Checkpoint_09" ID="{C79B5AD3-250D-4BA7-B730-DDA73CB8676A}" ShortID="937206783">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_UI_Checkpoint_09" ID="{AD0BA458-DEA8-4DFA-B205-126401F8F4FC}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_UI_Checkpoint_09.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1050247845"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_UI_Checkpoint_09" ID="{AD0BA458-DEA8-4DFA-B205-126401F8F4FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Player" ID="{E2F001D1-C22B-4684-8466-DDF57D9DAF33}" ShortID="666048623">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom CreatedFrom="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}">
+								<Effect Name="Have_U_Ever_Been_Outside (Custom)" ID="{FC78DF3B-9EAE-4A50-BF05-89DBF3C1ED8E}" ShortID="724570607" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<PropertyList>
+										<Property Name="DecayTime" Type="Real32" Value="1"/>
+										<Property Name="Density" Type="Real32" Value="50"/>
+										<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+										<Property Name="ERLevel" Type="Real32" Value="-18"/>
+										<Property Name="ERPattern" Type="int32" Value="29"/>
+										<Property Name="Filter1Freq" Type="Real32" Value="210"/>
+										<Property Name="Filter1Gain" Type="Real32" Value="1.5"/>
+										<Property Name="Filter2Freq" Type="Real32" Value="6830"/>
+										<Property Name="Filter2Gain" Type="Real32" Value="-7.5"/>
+										<Property Name="Filter2Q" Type="Real32" Value="0.65"/>
+										<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+										<Property Name="Filter3Gain" Type="Real32" Value="-4"/>
+										<Property Name="HFDamping" Type="Real32" Value="5.05"/>
+										<Property Name="PreDelay" Type="Real32" Value="145"/>
+										<Property Name="Quality" Type="int32" Value="12"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-9"/>
+										<Property Name="RoomSize" Type="Real32" Value="73"/>
+										<Property Name="StereoWidth" Type="Real32" Value="28"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX in world" ID="{16F2A6C8-7D8C-4DF1-BDBD-917B23121988}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Gunshot" ID="{8BC2C859-CA3D-46F3-A190-9D7864F718F9}" ShortID="765903430">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="TS24_Gunshots_01" ID="{DCABE5A9-5C5B-4D0D-9DE4-9F83DE2FBDFA}" ShortID="122565431">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_01" ID="{6FFED061-D890-4B7D-816D-5A42753075F9}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="473977492"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_01" ID="{6FFED061-D890-4B7D-816D-5A42753075F9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_02" ID="{DB87CA1F-98A5-4B6B-B238-C2E538A9A44C}" ShortID="368591669">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_02" ID="{7309D66D-F8B7-45FE-824F-BD084F5A39E2}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="345846653"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_02" ID="{7309D66D-F8B7-45FE-824F-BD084F5A39E2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_03" ID="{37DDEB88-EC73-4A6A-9386-E3203FFAAEC9}" ShortID="424181045">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_03" ID="{7430E0FE-CDFE-4E02-A6AF-962579112D25}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="264066997"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_03" ID="{7430E0FE-CDFE-4E02-A6AF-962579112D25}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_04" ID="{503EAE51-4864-4452-9CCE-3D258935974D}" ShortID="1061206508">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_04" ID="{0F25AFAD-3689-4532-8076-8453C040E507}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1012923457"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_04" ID="{0F25AFAD-3689-4532-8076-8453C040E507}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_05" ID="{B117675B-9009-408C-A526-1DE55CD084B7}" ShortID="787513973">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_05" ID="{8FC7035F-1E48-40C8-9C6A-B36B8C4B00C4}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="424165655"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_05" ID="{8FC7035F-1E48-40C8-9C6A-B36B8C4B00C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_06" ID="{3B8FC5C5-7A2E-4C13-ADEF-DD976227EDDE}" ShortID="9238479">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_06" ID="{E6C49738-D410-4CDD-A8D3-F1DE7A21DEAC}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="59110428"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_06" ID="{E6C49738-D410-4CDD-A8D3-F1DE7A21DEAC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_07" ID="{036684DF-182B-468F-A662-7BEDCABC7BFF}" ShortID="871994595">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_07" ID="{E5C01D6D-8AA8-450F-9429-B7FF171C3CC8}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="913399208"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_07" ID="{E5C01D6D-8AA8-450F-9429-B7FF171C3CC8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_08" ID="{4494A97E-AA5A-4E32-92E6-2D470AFD6164}" ShortID="939052873">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_08" ID="{18F693AD-1E91-4DF2-B10D-BBDDC1F66111}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="566725239"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_08" ID="{18F693AD-1E91-4DF2-B10D-BBDDC1F66111}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_09" ID="{AF994F55-880F-47C2-9F8E-4AF7FED5E587}" ShortID="268523436">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_09" ID="{637F6788-02B4-4B70-878C-CF96E9B57792}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_09.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="271329884"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_09" ID="{637F6788-02B4-4B70-878C-CF96E9B57792}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_10" ID="{FB4BA87D-DA6A-4E87-824E-84028E430A7C}" ShortID="315311882">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_10" ID="{73D06E2D-A62E-43E2-94E3-00234CF634B9}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="574325306"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_10" ID="{73D06E2D-A62E-43E2-94E3-00234CF634B9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_11" ID="{4B3BFF4C-9329-4C1D-825B-1DE346A7C352}" ShortID="158868955">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_11" ID="{4ADB8663-C36E-4B1E-A227-5A63255C7AF0}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_11.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="381332441"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_11" ID="{4ADB8663-C36E-4B1E-A227-5A63255C7AF0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_12" ID="{213907AB-FCE6-4193-9855-BDC3B89A4458}" ShortID="863825989">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_12" ID="{2EC7F777-ECA2-4F7E-B98A-7D2D6C555630}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_12.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="260290191"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_12" ID="{2EC7F777-ECA2-4F7E-B98A-7D2D6C555630}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_13" ID="{BE0CFDC2-A5A2-481C-BF2C-37069CDA27C5}" ShortID="328707335">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_13" ID="{C80758F0-C3BE-4B1D-A5B6-B59EA3336395}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_13.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="798709375"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_13" ID="{C80758F0-C3BE-4B1D-A5B6-B59EA3336395}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_14" ID="{BC3BF0D3-738A-47FA-8D7D-720484007B46}" ShortID="689273520">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_14" ID="{5DBB6D93-CC3D-422D-85F1-B6F256096F92}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_14.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1021124863"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_14" ID="{5DBB6D93-CC3D-422D-85F1-B6F256096F92}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_15" ID="{04F93382-A0C5-4156-AE53-24873380940F}" ShortID="454225792">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_15" ID="{7474B331-24A0-46C9-960F-8680E4A87F69}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_15.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="929791928"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_15" ID="{7474B331-24A0-46C9-960F-8680E4A87F69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_16" ID="{D73C6C8A-9AF6-4CA8-8632-F6CC44813BD5}" ShortID="502706263">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_16" ID="{A4C91AA4-B467-42B9-9989-6007609C7CF6}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_16.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="418206131"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_16" ID="{A4C91AA4-B467-42B9-9989-6007609C7CF6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_17" ID="{2E83F8B7-1FBD-444E-8836-5055F63CA3FD}" ShortID="230160349">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_17" ID="{E71EF5C1-0611-48DD-A981-E7983E786790}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_17.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1033031426"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_17" ID="{E71EF5C1-0611-48DD-A981-E7983E786790}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_18" ID="{38F10C82-B052-4AB9-8268-6FE62049BF0C}" ShortID="775275550">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_18" ID="{3A9C8735-D1B1-4375-BA50-09C2AA5708CB}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_18.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="284251974"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_18" ID="{3A9C8735-D1B1-4375-BA50-09C2AA5708CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_19" ID="{C42E7EE2-90A1-4EAC-8CC5-5FD63354EFB3}" ShortID="305378079">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_19" ID="{587DB488-0E3C-43AD-8372-36069B33269A}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_19.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="206019486"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_19" ID="{587DB488-0E3C-43AD-8372-36069B33269A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_20" ID="{9A30F905-F620-4CA5-AED4-B66437727E89}" ShortID="543098954">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_20" ID="{EE9DB024-BD81-43D9-A3B3-81A142B31E70}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_20.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="487176745"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_20" ID="{EE9DB024-BD81-43D9-A3B3-81A142B31E70}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_21" ID="{7FF1FBE8-B558-4B73-A997-A19C965ACC23}" ShortID="882440827">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_21" ID="{C1E490D6-D8AE-43EC-AE6D-556FDA12132F}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_21.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="603774960"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_21" ID="{C1E490D6-D8AE-43EC-AE6D-556FDA12132F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_22" ID="{33BDA45A-5C7D-4F7C-95D9-EA80A9F607A8}" ShortID="1041258685">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_22" ID="{AFDD30B4-D58F-4103-B6D3-C7BCCD7138D3}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_22.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="948402890"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_22" ID="{AFDD30B4-D58F-4103-B6D3-C7BCCD7138D3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_23" ID="{95DDC77B-A8A9-415A-A48E-9F363C9368F5}" ShortID="383570756">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_23" ID="{0562EFDC-A4DF-41F4-9987-F1A6FE9CDACB}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_23.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1039857857"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_23" ID="{0562EFDC-A4DF-41F4-9987-F1A6FE9CDACB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Gunshots_24" ID="{C7C4A518-2D65-4B85-B968-3DDEC27B1B99}" ShortID="1045551023">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Gunshots_24" ID="{1A458C17-5170-400A-ACC7-418DB1E066B0}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Gunshots_24.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="164037038"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Gunshots_24" ID="{1A458C17-5170-400A-ACC7-418DB1E066B0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<BlendContainer Name="Movement" ID="{CB20E8CB-9897-4A61-B4FF-A4F2E5DD6E59}" ShortID="794073130">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Roll_Slow" ID="{DD576C16-EA61-4AB7-81A8-985D6A21DF59}" ShortID="212543220">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Soundseed Grain" ID="{C7B6F0CF-EAEC-40A4-8218-3457F80A5AF2}" ShortID="139413802" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+											<PropertyList>
+												<Property Name="Attack" Type="Real32" Value="951"/>
+												<Property Name="DurationLink" Type="int32" Value="1"/>
+												<Property Name="GrainTime" Type="Real32" Value="900"/>
+												<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+												<Property Name="Speed" Type="Real32" Value="0.9"/>
+											</PropertyList>
+											<ChildrenList>
+												<AudioFileSource Name="TS24_Movement_Slow" ID="{A2646AE5-2A38-4DF4-A128-CE68F5B8B970}">
+													<Language>SoundSeed Grain</Language>
+													<AudioFile>TS24_Movement_Slow.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="46410936"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{CB42BCB8-4B63-4F27-BA6E-08CAFDFDEA71}" ShortID="162936940">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<Custom>
+																			<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{FBFFA308-200A-4F18-AD22-7111DD7E4DF8}" ShortID="608267295">
+																				<PropertyList>
+																					<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																				</PropertyList>
+																			</ModulatorEnvelope>
+																		</Custom>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{DF04D664-0FCF-444A-99F1-1E68653F1DFF}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<Language>SFX</Language>
+											<PluginData/>
+											<PluginInnerObjectList>
+												<List Name="ParameterModulatorAssociation">
+													<PluginInnerObject Name="" ID="{FC795911-AB21-4E39-8D27-82A0FBC4CD6E}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
+														<PropertyList>
+															<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
+															<Property Name="ModID" Type="int32" Value="151"/>
+															<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
+															<Property Name="ParamDisplayName" Type="string" Value="Position"/>
+															<Property Name="ParamID" Type="int32" Value="150"/>
+															<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
+														</PropertyList>
+													</PluginInnerObject>
+												</List>
+											</PluginInnerObjectList>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Soundseed Grain" ID="{C7B6F0CF-EAEC-40A4-8218-3457F80A5AF2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Roll_Medium" ID="{5E51A1CD-B4AA-415D-B66C-D30CDCDCBEAC}" ShortID="688708191">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Soundseed Grain" ID="{3127ADF8-6210-447E-AD08-214368D3C0F8}" ShortID="833014743" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+											<PropertyList>
+												<Property Name="Attack" Type="Real32" Value="951"/>
+												<Property Name="Duration" Type="Real32" Value="950"/>
+												<Property Name="DurationLink" Type="int32" Value="1"/>
+												<Property Name="GrainTime" Type="Real32" Value="850"/>
+												<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+											</PropertyList>
+											<ChildrenList>
+												<AudioFileSource Name="TS24_Movement_Medium" ID="{ABEAB099-0499-47DE-A070-B33C855AFB90}">
+													<Language>SoundSeed Grain</Language>
+													<AudioFile>TS24_Movement_Medium.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="723523311"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{3329B8D9-AC74-4063-85F8-50C32A0CB0F8}" ShortID="155184689">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<Custom>
+																			<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{20DC96E5-D80F-41D6-9D1B-0D237880F132}" ShortID="452377066">
+																				<PropertyList>
+																					<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																				</PropertyList>
+																			</ModulatorEnvelope>
+																		</Custom>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{CFE22FB4-ED61-4246-A67A-D5404109C370}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<Language>SFX</Language>
+											<PluginData/>
+											<PluginInnerObjectList>
+												<List Name="ParameterModulatorAssociation">
+													<PluginInnerObject Name="" ID="{BFECFE67-DF3F-4D63-9792-BBBA3FE9C381}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
+														<PropertyList>
+															<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
+															<Property Name="ModID" Type="int32" Value="151"/>
+															<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
+															<Property Name="ParamDisplayName" Type="string" Value="Position"/>
+															<Property Name="ParamID" Type="int32" Value="150"/>
+															<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
+														</PropertyList>
+													</PluginInnerObject>
+												</List>
+											</PluginInnerObjectList>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Soundseed Grain" ID="{3127ADF8-6210-447E-AD08-214368D3C0F8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Roll_Fast" ID="{163B9E03-C6AE-4724-A596-5C941B4A666D}" ShortID="233906871">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Soundseed Grain" ID="{89DBA638-E34F-4923-A47C-B7A5E3468D37}" ShortID="944675501" PluginName="SoundSeed Grain" CompanyID="0" PluginID="183">
+											<PropertyList>
+												<Property Name="Attack" Type="Real32" Value="951"/>
+												<Property Name="Duration" Type="Real32" Value="500"/>
+												<Property Name="DurationLink" Type="int32" Value="1"/>
+												<Property Name="GrainTime" Type="Real32" Value="300"/>
+												<Property Name="MarkerSelectMod1Depth" Type="Real32" Value="100"/>
+											</PropertyList>
+											<ChildrenList>
+												<AudioFileSource Name="TS24_Movement_Fast" ID="{19C5D895-F2A3-4C8E-B571-B6050153F179}">
+													<Language>SoundSeed Grain</Language>
+													<AudioFile>TS24_Movement_Fast.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="974336581"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{561CE576-5F41-4BAF-A3A1-57C0674DB3C7}" ShortID="349652142">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<Custom>
+																			<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{C0AD6768-58CE-4F5A-B9D7-53A007A7B9CD}" ShortID="456668281">
+																				<PropertyList>
+																					<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																				</PropertyList>
+																			</ModulatorEnvelope>
+																		</Custom>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{E258EA0C-DB5D-4E46-9021-759A2490F4B0}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<Language>SFX</Language>
+											<PluginData/>
+											<PluginInnerObjectList>
+												<List Name="ParameterModulatorAssociation">
+													<PluginInnerObject Name="" ID="{638957AB-C073-4C5F-8AE8-494D8FCC1720}" PluginName="ParameterModulatorAssociation" CompanyID="0" PluginID="185">
+														<PropertyList>
+															<Property Name="ModDisplayName" Type="string" Value="Mod 1"/>
+															<Property Name="ModID" Type="int32" Value="151"/>
+															<Property Name="ModName" Type="string" Value="MarkerSelectMod1Depth"/>
+															<Property Name="ParamDisplayName" Type="string" Value="Position"/>
+															<Property Name="ParamID" Type="int32" Value="150"/>
+															<Property Name="ParamName" Type="string" Value="MarkerSelect"/>
+														</PropertyList>
+													</PluginInnerObject>
+												</List>
+											</PluginInnerObjectList>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Soundseed Grain" ID="{89DBA638-E34F-4923-A47C-B7A5E3468D37}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<BlendTrackList>
+								<BlendTrack Name="Slow and medium" ID="{AB67BB1D-03F5-4534-96B0-DC1BEFDAB5D3}" ShortID="1001347263">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="Speed" ID="{721EFA3E-BB03-4486-912C-D7B9E8BB216F}" WorkUnitID="{AA4CFFC4-EF7C-42C2-A52C-A0D04D0C274D}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{B4C92E75-39EF-4CDA-B5CD-645BCD127287}" ShortID="495734296">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Speed" ID="{721EFA3E-BB03-4486-912C-D7B9E8BB216F}" WorkUnitID="{AA4CFFC4-EF7C-42C2-A52C-A0D04D0C274D}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{84BE804D-B8AE-42CA-9713-EAD113E2153B}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>14.93977</XPos>
+																				<YPos>-0.30819</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>60</XPos>
+																				<YPos>-0.131314083342433</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>69.95984</XPos>
+																				<YPos>-2.74865</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>InvertedSCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>99.999</XPos>
+																				<YPos>-9.23321</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>-8.87395</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{D8B9EE75-16AE-4378-A9B2-84FFC3C9175D}" ShortID="1039198496">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Speed" ID="{721EFA3E-BB03-4486-912C-D7B9E8BB216F}" WorkUnitID="{AA4CFFC4-EF7C-42C2-A52C-A0D04D0C274D}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{7DB952A8-ACEB-4C3F-9B03-59988BB02307}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>94.9397590361446</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>99.03614</XPos>
+																				<YPos>480</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>864</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="Roll_Slow" ID="{DD576C16-EA61-4AB7-81A8-985D6A21DF59}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>0</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>71.8476395582329</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="Roll_Medium" ID="{5E51A1CD-B4AA-415D-B66C-D30CDCDCBEAC}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>21.4866937751004</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>100</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+								<BlendTrack Name="Fast" ID="{C12C624F-29A8-47D6-90BE-A8AF02B96D8C}" ShortID="721147112">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="Speed" ID="{721EFA3E-BB03-4486-912C-D7B9E8BB216F}" WorkUnitID="{AA4CFFC4-EF7C-42C2-A52C-A0D04D0C274D}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{5FE39D7A-0EA9-4C70-8354-52606938CAB1}" ShortID="26633844">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Speed" ID="{721EFA3E-BB03-4486-912C-D7B9E8BB216F}" WorkUnitID="{AA4CFFC4-EF7C-42C2-A52C-A0D04D0C274D}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{6E47E848-D8C0-4FA5-A496-B3792EB936CA}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>30.44177</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>98.15261</XPos>
+																				<YPos>-6.74484</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>99.5984</XPos>
+																				<YPos>-7.38914</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>-7.53501</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{40611D81-AC41-4B9B-A3CF-D96E0E0020F0}" ShortID="527026717">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Speed" ID="{721EFA3E-BB03-4486-912C-D7B9E8BB216F}" WorkUnitID="{AA4CFFC4-EF7C-42C2-A52C-A0D04D0C274D}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{85F93E55-9224-49FA-B779-B006A6103C06}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>94.6184738955823</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>99.43775</XPos>
+																				<YPos>576</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>1056</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="Roll_Fast" ID="{163B9E03-C6AE-4724-A596-5C941B4A666D}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>0</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>100</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
+						</BlendContainer>
+						<RandomSequenceContainer Name="Bounce" ID="{C7AFB120-8546-4516-A87E-D929A1382CEA}" ShortID="1014882452">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-17</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="TS24_Movement_Bounce_01" ID="{6CB145E2-B192-4D3C-9960-C7139E5F6BBC}" ShortID="913520603">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Movement_Bounce_01" ID="{E8B93F96-4FFA-401C-95B3-1F1078F74F74}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Movement_Bounce_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="398187121"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Movement_Bounce_01" ID="{E8B93F96-4FFA-401C-95B3-1F1078F74F74}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="TS24_Movement_Bounce_02" ID="{FB066634-0D04-4C6C-A245-9D0BD1E31DB2}" ShortID="708133303">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Movement_Bounce_02" ID="{98F769EB-5866-4225-830A-347EF805E277}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Movement_Bounce_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="708201421"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Movement_Bounce_02" ID="{98F769EB-5866-4225-830A-347EF805E277}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Hat_Loop" ID="{B41941AE-900B-4DD8-A749-D2868187E62C}" ShortID="1058395919">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TS24_Movement_HatBounceVerb_Loop" ID="{8DA4BB37-A8DA-4741-98AB-2FC5F3525BD9}">
+									<Language>SFX</Language>
+									<AudioFile>TS24_Movement_HatBounceVerb_Loop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="575004633"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TS24_Movement_HatBounceVerb_Loop" ID="{8DA4BB37-A8DA-4741-98AB-2FC5F3525BD9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Ambience" ID="{DFE7BA87-2B5A-4453-85A1-1784D3FDDB0A}" ShortID="269666400">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambience" ID="{AC6B24EC-B0FC-4ACC-937D-CCFCA25EDE06}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="TS24_Ambi_Bed_Loop" ID="{AAD8EC74-50D2-4B43-80BD-0A7BE3C07299}" ShortID="433681463">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TS24_Ambi_Bed_Loop" ID="{A9B598D4-97FC-4EB0-86B2-57F1BDCC8219}">
+									<Language>SFX</Language>
+									<AudioFile>TS24_Ambi_Bed_Loop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="167263194"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TS24_Ambi_Bed_Loop" ID="{A9B598D4-97FC-4EB0-86B2-57F1BDCC8219}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Hawk_Controller" ID="{5926B33A-11E0-45D7-83D9-D1F8119FA055}" ShortID="235197277">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Hawk_Silence" ID="{D1D6CE61-BD8E-444E-A218-CE49981BBDB6}" ShortID="742687380">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{CE140B74-F07F-452C-BD69-BFE70CC7526F}" ShortID="757176250" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="40"/>
+												<Property Name="LengthMax" Type="Real32" Value="20"/>
+												<Property Name="LengthMin" Type="Real32" Value="-4"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{CE140B74-F07F-452C-BD69-BFE70CC7526F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Hawk" ID="{C8F09C8F-26B0-495A-8098-009679A24A37}" ShortID="321041024">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TS24_Ambi_Sweetner_Hawk_01" ID="{979E9FB0-79EE-4875-BC8F-3651DE7F1DFB}" ShortID="642125127">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TS24_Ambi_Sweetner_Hawk_01" ID="{B5F409BD-F5C1-49B8-98C3-6438FDAE628C}">
+													<Language>SFX</Language>
+													<AudioFile>TS24_Ambi_Sweetner_Hawk_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="209930122"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TS24_Ambi_Sweetner_Hawk_01" ID="{B5F409BD-F5C1-49B8-98C3-6438FDAE628C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="TS24_Ambi_Sweetner_Hawk_02" ID="{7751B63D-FD90-4FA1-8AB3-1A80F8E78517}" ShortID="194440220">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TS24_Ambi_Sweetner_Hawk_02" ID="{5E2E4AC2-09CE-40B6-9383-667966DC0C12}">
+													<Language>SFX</Language>
+													<AudioFile>TS24_Ambi_Sweetner_Hawk_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="916906725"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TS24_Ambi_Sweetner_Hawk_02" ID="{5E2E4AC2-09CE-40B6-9383-667966DC0C12}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="TS24_Ambi_Sweetner_Hawk_03" ID="{EF21E864-DF42-4B34-AC92-BD5333046193}" ShortID="547061840">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TS24_Ambi_Sweetner_Hawk_03" ID="{AAD3BE23-41AC-486B-914A-6121FB945302}">
+													<Language>SFX</Language>
+													<AudioFile>TS24_Ambi_Sweetner_Hawk_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918520328"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TS24_Ambi_Sweetner_Hawk_03" ID="{AAD3BE23-41AC-486B-914A-6121FB945302}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Hawk_Silence" ID="{D1D6CE61-BD8E-444E-A218-CE49981BBDB6}"/>
+								<ItemRef Name="Hawk" ID="{C8F09C8F-26B0-495A-8098-009679A24A37}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Scuttle_Controller" ID="{1212C77D-2FAD-412D-AD5B-A228674BA6B3}" ShortID="846839697">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Scuttle" ID="{79B08941-1A3E-4D59-AF86-F7EA6114B854}" ShortID="637616408">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="TS24_Ambi_Sweetner_Scuttle_01" ID="{17592AAB-31A9-4D90-8AA3-A5C90BC25F05}" ShortID="95347270">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TS24_Ambi_Sweetner_Scuttle_01" ID="{3108D17F-57E1-49E6-B7E3-A5156CA21B2D}">
+													<Language>SFX</Language>
+													<AudioFile>TS24_Ambi_Sweetner_Scuttle_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="146164881"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TS24_Ambi_Sweetner_Scuttle_01" ID="{3108D17F-57E1-49E6-B7E3-A5156CA21B2D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="TS24_Ambi_Sweetner_Scuttle_02" ID="{A7C76D3F-300A-4407-9043-6DB79A32D80A}" ShortID="534809613">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TS24_Ambi_Sweetner_Scuttle_02" ID="{197928F8-C142-4503-AE65-79CBAABB0270}">
+													<Language>SFX</Language>
+													<AudioFile>TS24_Ambi_Sweetner_Scuttle_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="692485199"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TS24_Ambi_Sweetner_Scuttle_02" ID="{197928F8-C142-4503-AE65-79CBAABB0270}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Scuttle_Silence" ID="{E564323B-EDD1-4C7F-AE11-94F9CC513DCC}" ShortID="818442328">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{3190F8C0-1831-4BCA-BA36-A72964BE0092}" ShortID="496587940" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="60"/>
+												<Property Name="LengthMax" Type="Real32" Value="10"/>
+												<Property Name="LengthMin" Type="Real32" Value="-9"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{3190F8C0-1831-4BCA-BA36-A72964BE0092}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Scuttle_Silence" ID="{E564323B-EDD1-4C7F-AE11-94F9CC513DCC}"/>
+								<ItemRef Name="Scuttle" ID="{79B08941-1A3E-4D59-AF86-F7EA6114B854}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Rattlesnake_Controller" ID="{2D742C5B-BF5B-41FA-8112-1225E22F055E}" ShortID="132308945">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Rattlesnake_Silence" ID="{CBEA997F-58EB-4622-A886-78D471116284}" ShortID="383116555">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Silence" ID="{B1EF8574-B9B6-47D3-8A7A-CD7F5279FB9C}" ShortID="182573733" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="80"/>
+												<Property Name="LengthMax" Type="Real32" Value="20"/>
+												<Property Name="LengthMin" Type="Real32" Value="-2"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Silence" ID="{B1EF8574-B9B6-47D3-8A7A-CD7F5279FB9C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Rattlesnake" ID="{24CF7570-00B8-49A2-9491-78C777827595}" ShortID="733202927">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5BBCDC60-0D6B-4EF8-9BEB-F579D54985E3}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{46E889DF-85B3-407B-BF01-78C4956517B6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="TS24_Ambi_Sweetner_Rattlesnake" ID="{CCC746EB-55FF-4823-9AD0-85244E91A7B0}">
+											<Language>SFX</Language>
+											<AudioFile>TS24_Ambi_Sweetner_Rattlesnake.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="866087819"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="TS24_Ambi_Sweetner_Rattlesnake" ID="{CCC746EB-55FF-4823-9AD0-85244E91A7B0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Rattlesnake_Silence" ID="{CBEA997F-58EB-4622-A886-78D471116284}"/>
+								<ItemRef Name="Rattlesnake" ID="{24CF7570-00B8-49A2-9491-78C777827595}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

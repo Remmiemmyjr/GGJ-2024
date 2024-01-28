@@ -1,5 +1,14 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	42448320	SFX_Vol			\Default Work Unit\SFX_Vol	
+	2246609544	Music_Vol			\Default Work Unit\Music_Vol	
+	4035164671	Ambience_Vol			\Default Work Unit\Ambience_Vol	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	3688490227	SFX in world			\Default Work Unit\Master Audio Bus\SFX in world	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
