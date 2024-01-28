@@ -7,9 +7,7 @@ public class CheckPoint : MonoBehaviour
     bool checkPointReached = false;
 
     // Storage Variables
-    Vector3 checkPointPosition = Vector3.zero;
-    Vector3 checkPointVelocity = Vector3.zero;
-    Vector3 checkPointAcceleration = Vector3.zero;
+    Vector3 checkPointPosition;
     float time = 0.0f;
 
     private void Start()
@@ -23,10 +21,11 @@ public class CheckPoint : MonoBehaviour
         if (other.tag != "Player" && checkPointReached)
             return;
 
-        // TODO: Snapshot the velocity and acceleration of the player
-
-
         // Snapshot the time at the checkpoint
         time = GameObject.FindGameObjectWithTag("Timer").GetComponent<Timer>().GetTime();
+
+        // Set the position and time attributes within the player controller
+        other.GetComponent<PlayerController>().resetPosition = checkPointPosition - new Vector3(0.0f, (transform.localScale.y / 4.0f), 0.0f);
+        other.GetComponent<PlayerController>().timeOnReset = time;
     }
 }

@@ -63,8 +63,9 @@ public class PlayerController : MonoBehaviour
 
     // Reset variables
     [HideInInspector]
-    Vector3 resetPosition;
-    float timeOnReset = 0.0f;
+    public Vector3 resetPosition;
+    [HideInInspector]
+    public float timeOnReset = 0.0f;
 
 
     // Start is called before the first frame update
@@ -224,9 +225,8 @@ public class PlayerController : MonoBehaviour
         //Animation
         yield return new WaitForSeconds(reloadTime);
         bullets = maxBullets;
-        Debug.Log("Reloaded");
-        Debug.Log(bullets);
         canReload = true;
+        reloadUIAnimator.SetTrigger("FinishReload");
     }
 
     IEnumerator ChangeFOV(float startFOV, float endFOV, float duration)
@@ -261,6 +261,11 @@ public class PlayerController : MonoBehaviour
 
     public void ResetPlayer()
     {
+        // Reset bullets
+        reloadUIAnimator.SetTrigger("Reset");
+        bullets = maxBullets;
+        canReload = true;
+
         // Reset position
         rb.velocity = Vector3.zero;
         transform.position = resetPosition;
