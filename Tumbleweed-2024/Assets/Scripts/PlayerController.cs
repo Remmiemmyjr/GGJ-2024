@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     Vector3 currMoveVec;
     Coroutine reloadCo;
 
+    public Animator reloadUIAnimator;
+
     public CinemachineVirtualCamera cmvCam;
     float rotDir;
     public float rotSpeed = 2.0f;
@@ -119,6 +121,8 @@ public class PlayerController : MonoBehaviour
             // BULLETS
             bullets -= 1;
             Debug.Log(bullets);
+
+            reloadUIAnimator.SetInteger("RevolverAmmo", bullets);
         }
     }
 
@@ -139,6 +143,8 @@ public class PlayerController : MonoBehaviour
             // BULLETS
             bullets -= 1;
             Debug.Log(bullets);
+
+            reloadUIAnimator.SetInteger("RevolverAmmo", bullets);
         }
     }
 
