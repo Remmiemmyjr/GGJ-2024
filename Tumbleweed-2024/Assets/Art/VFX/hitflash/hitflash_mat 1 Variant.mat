@@ -23,7 +23,7 @@ Material:
   m_Name: hitflash_mat 1 Variant
   m_Shader: {fileID: -6465566751694194690, guid: 9752e05a108c2b14bacdc1a9b3c10349,
     type: 3}
-  m_Parent: {fileID: 2100000, guid: dd4bfdbb8715d9646a8d6443c5e9cd27, type: 2}
+  m_Parent: {fileID: 2100000, guid: ef1302373f747ec43aa53513789bcd25, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -36,7 +36,11 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _MainTexture:
+        m_Texture: {fileID: 2800000, guid: f728f4c2d99423947b05d6f35a810ec5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats: []
     m_Colors: []

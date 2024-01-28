@@ -7,7 +7,8 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody rb;
-    Vector3 currMoveVec;
+    [HideInInspector]
+    public Vector3 currMoveVec;
 
     float dirVal;
     float speed;
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [Header("--------VISUALS--------")]
     public Animator reloadUIAnimator;
     public ParticleSystem dustParticles;
+    public ParticleSystem gunParticles;
 
 
     [Header("--------CAMERA---------")]
@@ -54,10 +56,15 @@ public class PlayerController : MonoBehaviour
     float jumpCoolDown = 0.25f;
     float lastJumpTime = -1f;
 
-
+    // Boost values
     bool isSpeedBoosting;
     bool canSpeedBoost;
     bool canReload;
+
+    // Reset variables
+    [HideInInspector]
+    Vector3 resetPosition;
+    float timeOnReset = 0.0f;
 
 
     // Start is called before the first frame update
@@ -70,6 +77,8 @@ public class PlayerController : MonoBehaviour
         bullets = maxBullets;
         canReload = true;
         normalFOV = cmvCam.m_Lens.FieldOfView;
+
+        resetPosition = transform.position;
     }
 
 
@@ -134,6 +143,7 @@ public class PlayerController : MonoBehaviour
             
             // BULLETS
             bullets -= 1;
+            gunParticles.Play();
             Debug.Log(bullets);
 
             reloadUIAnimator.SetInteger("RevolverAmmo", bullets);
@@ -156,6 +166,7 @@ public class PlayerController : MonoBehaviour
 
             // BULLETS
             bullets -= 1;
+            gunParticles.Play();
             Debug.Log(bullets);
 
             reloadUIAnimator.SetInteger("RevolverAmmo", bullets);
@@ -233,7 +244,7 @@ public class PlayerController : MonoBehaviour
 
     void EmitParticles()
     {
-        if (currMoveVec != Vector3.zero && rb.velocity.y == 0)
+        if (Mathf.Abs(currMoveVec.magnitude) > 5f && rb.velocity.y == 0)
             CreateDustParticles();
         else
             StopDustParticles();
@@ -246,5 +257,15 @@ public class PlayerController : MonoBehaviour
     void StopDustParticles()
     {
         dustParticles.Stop();
+    }
+
+    public void ResetPlayer()
+    {
+        // Reset position
+        rb.velocity = Vector3.zero;
+        transform.position = resetPosition;
+
+        // Reset time
+        GameObject.FindGameObjectWithTag("Timer").GetComponent<Timer>().SetTime(timeOnReset);
     }
 }

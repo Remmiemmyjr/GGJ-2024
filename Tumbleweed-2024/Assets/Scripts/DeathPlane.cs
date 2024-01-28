@@ -10,7 +10,7 @@ public class DeathPlane : MonoBehaviour
         if (other.tag != "Player")
             return;
 
-        // TODO: Call the player reset function here
-
+        // Call the player reset function here
+        other.GetComponent<PlayerController>().ResetPlayer();
     }
 }
