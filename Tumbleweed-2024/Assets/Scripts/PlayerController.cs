@@ -150,6 +150,11 @@ public class PlayerController : MonoBehaviour
         currMoveVec = new Vector3(rb.velocity.x, 0, rb.velocity.z);
 
         rb.AddForce((cmvCam.transform.forward * dirVal) * speed);
+
+        // Apply extra turning force while moving
+        if(dirVal != 0)
+            rb.AddForce((cmvCam.transform.right * rotDir) * speed);
+
         if (currMoveVec.magnitude > maxSpeed)
         {
             currMoveVec = currMoveVec.normalized * maxSpeed;
@@ -167,7 +172,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // if player is not giving move input or falling, slow it to a stop
+        // If the player is not giving move input or falling, slow it to a stop
         if(dirVal == 0 && Mathf.Abs(rb.velocity.y) <= 0.25f )
         {
             rb.velocity *= smoothDamp;
