@@ -595,6 +595,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 3.843, y: 95.09, z: 0}
+--- !u!198 &218745913 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5967640951158236628, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
+    type: 3}
+  m_PrefabInstance: {fileID: 1631710540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &227953666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2742,7 +2748,7 @@ PrefabInstance:
     - target: {fileID: 2012305781829371007, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
         type: 3}
       propertyPath: FOV
-      value: 55
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2012305781829371007, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
         type: 3}
@@ -2774,6 +2780,11 @@ PrefabInstance:
       propertyPath: speedBoost
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 2012305781829371007, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
+        type: 3}
+      propertyPath: dustParticles
+      value: 
+      objectReference: {fileID: 218745913}
     - target: {fileID: 2012305781829371007, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
         type: 3}
       propertyPath: jumpBoostForce
@@ -2843,6 +2854,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967640951158236628, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967640951158236628, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967640951158236628, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
+        type: 3}
+      propertyPath: InitialModule.startColor.minColor.a
+      value: 0.5254902
       objectReference: {fileID: 0}
     - target: {fileID: 7897537201243329763, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
         type: 3}

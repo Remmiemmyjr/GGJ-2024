@@ -8,41 +8,52 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody rb;
     Vector3 currMoveVec;
-    Coroutine reloadCo;
-
-    public Animator reloadUIAnimator;
-
-    public CinemachineVirtualCamera cmvCam;
-    float rotDir;
-    public float rotSpeed = 2.0f;
-    public float FOV = 55f;
-
-    public int maxBullets = 6;
-    [HideInInspector]
-    public int bullets;
 
     float dirVal;
     float speed;
     float normalFOV;
 
-    public float reloadTime = 3.0f;
+    [Header("--------VISUALS--------")]
+    public Animator reloadUIAnimator;
+    public ParticleSystem dustParticles;
 
+
+    [Header("--------CAMERA---------")]
+    public CinemachineVirtualCamera cmvCam;
+    float rotDir;
+    public float rotSpeed = 2.0f;
+    public float FOV = 60f;
+
+
+    [Header("--------BULLETS--------")]
+    public int maxBullets = 6;
+    [HideInInspector]
+    public int bullets;
+    public float reloadTime = 2.5f;
+
+
+    [Header("-------MOVEMENT-------")]
     [SerializeField]
     float accelerationRate = 100.0f;
     [SerializeField]
     float maxSpeed = 20.0f;
     public float smoothDamp = 0.95f;
 
+
+    [Header("------SPEED BOOST------")]
     [SerializeField]
     float speedBoost = 50.0f;
     [SerializeField]
     float speedBoostTime = 1.0f;
     float currTime;
 
+
+    [Header("------JUMP BOOST------")]
     [SerializeField]
     float jumpBoostForce = 20.0f;
     float jumpCoolDown = 0.25f;
     float lastJumpTime = -1f;
+
 
     bool isSpeedBoosting;
     bool canSpeedBoost;
@@ -82,7 +93,7 @@ public class PlayerController : MonoBehaviour
                 isSpeedBoosting = false;
                 canSpeedBoost = true;
                 currTime = speedBoostTime;
-                StartCoroutine(ChangeFOV(FOV, normalFOV, 0.5f));
+                StartCoroutine(ChangeFOV(FOV, normalFOV, 0.35f));
             }
         }
 
@@ -91,6 +102,8 @@ public class PlayerController : MonoBehaviour
             canReload = false;
             StartCoroutine(ReloadGun());
         }
+
+        EmitParticles();
     }
 
 
@@ -117,6 +130,7 @@ public class PlayerController : MonoBehaviour
             Vector3 forwardVec = cmvCam.transform.forward.normalized;
             rb.velocity = new Vector3(forwardVec.x * speedBoost, rb.velocity.y, forwardVec.z * speedBoost);
             StartCoroutine(ChangeFOV(normalFOV, FOV, 0.2f));
+
             
             // BULLETS
             bullets -= 1;
@@ -171,14 +185,8 @@ public class PlayerController : MonoBehaviour
             Vector3 newVel = new Vector3(currMoveVec.x, rb.velocity.y, currMoveVec.z);
 
             if (!isSpeedBoosting)
-            { 
-                rb.velocity = newVel; 
-            }
-
-            if(isSpeedBoosting)
             {
-                Mathf.Lerp(rb.velocity.x, newVel.x, 0.5f);
-                Mathf.Lerp(rb.velocity.z, newVel.z, 0.5f);
+                rb.velocity = newVel;
             }
         }
 
@@ -221,5 +229,22 @@ public class PlayerController : MonoBehaviour
             yield return null;
             time += Time.deltaTime;
         }
+    }
+
+    void EmitParticles()
+    {
+        if (currMoveVec != Vector3.zero && rb.velocity.y == 0)
+            CreateDustParticles();
+        else
+            StopDustParticles();
+    }
+
+    void CreateDustParticles()
+    {
+        dustParticles.Play();
+    }
+    void StopDustParticles()
+    {
+        dustParticles.Stop();
     }
 }
