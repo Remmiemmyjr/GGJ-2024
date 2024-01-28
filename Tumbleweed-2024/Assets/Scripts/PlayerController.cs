@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public CinemachineVirtualCamera cmvCam;
     float rotDir;
     public float rotSpeed = 2.0f;
-    public float FOV;
+    public float FOV = 55f;
 
     public int maxBullets = 6;
     [HideInInspector]
