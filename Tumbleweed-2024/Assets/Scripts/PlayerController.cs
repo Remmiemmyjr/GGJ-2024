@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public CinemachineVirtualCamera cmvCam;
     float rotDir;
     public float rotSpeed = 2.0f;
+    public float FOV;
 
     public int maxBullets = 6;
     [HideInInspector]
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     float dirVal;
     float speed;
+    float normalFOV;
 
     public float reloadTime = 2.0f;
 
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour
         canSpeedBoost = true;
         bullets = maxBullets;
         canReload = true;
+        normalFOV = cmvCam.m_Lens.FieldOfView;
     }
 
 
@@ -77,6 +80,7 @@ public class PlayerController : MonoBehaviour
                 isSpeedBoosting = false;
                 canSpeedBoost = true;
                 currTime = speedBoostTime;
+                StartCoroutine(ChangeFOV(FOV, normalFOV, 0.5f));
             }
         }
 
@@ -110,7 +114,7 @@ public class PlayerController : MonoBehaviour
             isSpeedBoosting = true;
             Vector3 forwardVec = cmvCam.transform.forward.normalized;
             rb.velocity = new Vector3(forwardVec.x * speedBoost, rb.velocity.y, forwardVec.z * speedBoost);
-
+            StartCoroutine(ChangeFOV(normalFOV, FOV, 0.2f));
             
             // BULLETS
             bullets -= 1;
@@ -198,5 +202,18 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Reloaded");
         Debug.Log(bullets);
         canReload = true;
+    }
+
+    IEnumerator ChangeFOV(float startFOV, float endFOV, float duration)
+    {
+        //float startFOV = cmvCam.m_Lens.FieldOfView;
+        float time = 0;
+        //float duration = 0.25f;
+        while (time < duration)
+        {
+            cmvCam.m_Lens.FieldOfView = Mathf.Lerp(startFOV, endFOV, time / duration);
+            yield return null;
+            time += Time.deltaTime;
+        }
     }
 }
