@@ -251,18 +251,20 @@ MonoBehaviour:
   reloadUIAnimator: {fileID: 0}
   dustParticles: {fileID: 0}
   gunParticles: {fileID: 7882801904945541418}
+  reloadClip: {fileID: 7400000, guid: 830c29e2735e6d4489cedbbd9ac5a5c1, type: 2}
   cmvCam: {fileID: 0}
   rotSpeed: 2
   FOV: 60
   maxBullets: 6
   bullets: 0
-  reloadTime: 2.5
   accelerationRate: 100
   maxSpeed: 20
   smoothDamp: 0.95
   speedBoost: 50
   speedBoostTime: 1
   jumpBoostForce: 20
+  resetPosition: {x: 0, y: 0, z: 0}
+  timeOnReset: 0
 --- !u!1001 &1966563960521221134
 PrefabInstance:
   m_ObjectHideFlags: 0
