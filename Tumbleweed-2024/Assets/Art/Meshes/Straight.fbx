@@ -9,10 +9,10 @@ FBXHeaderExtension:  {
 		Year: 2024
 		Month: 1
 		Day: 27
-		Hour: 18
-		Minute: 6
-		Second: 50
-		Millisecond: 555
+		Hour: 19
+		Minute: 3
+		Second: 6
+		Millisecond: 391
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.0.1"
 	OtherFlags:  {
@@ -37,13 +37,13 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "SideFX Software"
 			P: "Original|ApplicationName", "KString", "", "", "Houdini"
 			P: "Original|ApplicationVersion", "KString", "", "", "20.0.547"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "28/01/2024 02:06:50.550"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "28/01/2024 03:03:06.382"
 			P: "Original|FileName", "KString", "", "", "D:\Game Projects\2024\ggj-sp24\GGJ-2024\Tumbleweed-2024\Assets\Art\Meshes\Straight.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "SideFX Software"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Houdini"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "20.0.547"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "28/01/2024 02:06:50.550"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "28/01/2024 03:03:06.382"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "C:\Users\Brianna"
 			P: "Original|ApplicationNativeFile", "KString", "", "", "D:\Art2024\Softcopy\For Others\GGJ24\Meshes\Tracks.hipnc"
 		}
@@ -80,7 +80,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 6125189632, "", "Scene" {
+	Document: 6066084352, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -100,12 +100,12 @@ References:  {
 
 Definitions:  {
 	Version: 100
-	Count: 14
+	Count: 4
 	ObjectType: "GlobalSettings" {
 		Count: 1
 	}
 	ObjectType: "Model" {
-		Count: 6
+		Count: 1
 		PropertyTemplate: "FbxNode" {
 			Properties70:  {
 				P: "QuaternionInterpolate", "enum", "", "",0
@@ -182,16 +182,6 @@ Definitions:  {
 			}
 		}
 	}
-	ObjectType: "NodeAttribute" {
-		Count: 5
-		PropertyTemplate: "FbxNull" {
-			Properties70:  {
-				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
-				P: "Size", "double", "Number", "",100
-				P: "Look", "enum", "", "",1
-			}
-		}
-	}
 	ObjectType: "Geometry" {
 		Count: 1
 		PropertyTemplate: "FbxMesh" {
@@ -240,22 +230,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	NodeAttribute: 6613268800, "NodeAttribute::loop", "Null" {
-		TypeFlags: "Null"
-	}
-	NodeAttribute: 6613269184, "NodeAttribute::file1", "Null" {
-		TypeFlags: "Null"
-	}
-	NodeAttribute: 6613269568, "NodeAttribute::90TurnUp", "Null" {
-		TypeFlags: "Null"
-	}
-	NodeAttribute: 6613269952, "NodeAttribute::90TurnFlat", "Null" {
-		TypeFlags: "Null"
-	}
-	NodeAttribute: 6613270336, "NodeAttribute::90TurnUPCurvy", "Null" {
-		TypeFlags: "Null"
-	}
-	Geometry: 6594168832, "Geometry::Straight", "Mesh" {
+	Geometry: 6067100032, "Geometry::Straight", "Mesh" {
 		Vertices: *240 {
 			a: 0.0942758545279503,-0.000815272331237793,0.146498054265976,0.095805324614048,-0.000815272331237793,-0.0534960962831974,0.135092243552208,-0.000808767159469426,0.146810203790665,0.136674240231514,-0.000808759592473507,-0.0531835481524467,0.170384138822556,-0.000789339828770608,0.147100076079369,0.172110825777054,-0.000789251469541341,-0.052892480045557,0.209088668227196,-0.000744586053770036,0.147449061274529,0.211014196276665,-0.000744267541449517,-0.0525417104363441,0.244553834199905,-0.000665781029965729,0.147814124822617,0.246851295232773,-0.0006646245601587,-0.052172813564539,0.281098902225494,-0.00050262751756236,0.148276060819626,0.284214556217194,-0.000497715140227228,-0.0517005212605,0.317875385284424,-7.66250523156486e-05,0.148956298828125,0.321949481964111,-5.950727063464e-05,-0.0510025657713413,0.35454535484314,0.000799314584583044,0.149774074554443,0.358074486255646,0.000805614283308387,-0.0501969680190086,0.39125382900238,0.0014328685356304,0.150249481201172,0.393446087837219,0.00141660065855831,-0.0497388802468777,0.428709387779236,0.00189410278107971,0.150587752461433,0.430343806743622,0.00187102111522108,-0.0494056381285191,0.468014925718307,0.00228066509589553,0.150876834988594,0.469403892755508,0.00225517572835088,-0.0491183660924435,0.502619504928589,0.00257188989780843,0.151100978255272,0.503856182098389,0.00254511856473982,-0.0488951988518238,0.542200326919556,0.00286725838668644,0.151335507631302,0.543348789215088,0.00283983000554144,-0.0486611947417259,0.577651143074036,0.00310676102526486,0.151531770825386,0.578730463981628,0.0030788651201874,-0.0484653227031231,0.614399790763855,0.00333588104695082,0.151725098490715,0.615428328514099,0.00330766942352057,-0.0482722595334053,0.654967606067657,0.003570785978809,0.151929333806038,0.655958473682404,0.003542355960235,-0.0480682030320168,0.689868986606598,0.00376047194004059,0.152098953723907,0.690827429294586,0.0037318654358387,-0.0478987507522106,0.725826323032379,0.00394582748413086,0.152268871665001,0.726759493350983,0.00391709059476852,-0.0477289482951164,
 0.764298021793365,0.004134442191571,0.152446165680885,0.765208899974823,0.00410559633746743,-0.0475517623126507,0.805373430252075,0.00432626903057098,0.152631103992462,0.806274056434631,0.00429737567901611,-0.0473668612539768,0.0942696407437325,0.0381847284734249,0.146498009562492,0.0957991108298302,0.0381847284734249,-0.0534961447119713,0.136660397052765,0.0381912365555763,-0.0531836561858654,0.135078400373459,0.0381912291049957,0.146810099482536,0.172077551484108,0.0382107347249985,-0.0528927519917488,0.17035086452961,0.0382106453180313,0.147099807858467,0.210948318243027,0.0382556803524494,-0.0525422804057598,0.209022790193558,0.038255363702774,0.147448495030403,0.246720895171165,0.0383351817727089,-0.0521740801632404,0.244423434138298,0.0383340269327164,0.147812858223915,0.283901393413544,0.0385012775659561,-0.0517043955624104,0.280785739421844,0.0384963639080524,0.148272186517715,0.321257263422012,0.038935087621212,-0.0510132759809494,0.317183166742325,0.0389179699122906,0.148945584893227,0.357271820306778,0.0397975631058216,-0.0502099879086018,0.353742688894272,0.0397912636399269,0.14976105093956,0.39286944270134,0.0404124557971954,-0.0497483946382999,0.390677183866501,0.0404287241399288,0.150239959359169,0.429911971092224,0.0408686585724354,-0.0494136698544025,0.428277552127838,0.0408917404711246,0.15057972073555,0.469048082828522,0.0412535592913628,-0.0491258092224598,0.467659115791321,0.0412790477275848,0.150869399309158,0.503546595573425,0.0415438935160637,-0.0489023327827454,0.502309918403625,0.0415706634521484,0.15109384059906,0.543071568012238,0.0418388471007347,-0.048668134957552,0.541923105716705,0.0418662764132023,0.151328563690186,0.578477203845978,0.0420780442655087,-0.0484721288084984,0.577397882938385,0.0421059392392635,0.15152496099472,0.615193903446198,0.0423069670796394,-0.0482789650559425,0.614165365695953,0.0423351787030697,0.151718392968178,0.655739605426788,0.0425417423248291,-0.0480748303234577,0.654748737812042,0.042570173740387,0.151922702789307,0.690620958805084,0.0427313186228275,-0.0479053184390068,
@@ -317,71 +292,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 6612792704, "Model::loop", "Null" {
-		Version: 232
-		Properties70:  {
-			P: "RotationActive", "bool", "", "",1
-			P: "InheritType", "enum", "", "",1
-			P: "Show", "bool", "", "",0
-			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Scaling", "Lcl Scaling", "", "A",1500,1500,1500
-			P: "Visibility Inheritance", "Visibility Inheritance", "", "",0
-		}
-		Shading: Y
-		Culling: "CullingOff"
-	}
-	Model: 6612790016, "Model::file1", "Null" {
-		Version: 232
-		Properties70:  {
-			P: "RotationActive", "bool", "", "",1
-			P: "InheritType", "enum", "", "",1
-			P: "Show", "bool", "", "",0
-			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Visibility Inheritance", "Visibility Inheritance", "", "",0
-		}
-		Shading: Y
-		Culling: "CullingOff"
-	}
-	Model: 6612787328, "Model::90TurnUp", "Null" {
-		Version: 232
-		Properties70:  {
-			P: "RotationActive", "bool", "", "",1
-			P: "InheritType", "enum", "", "",1
-			P: "Show", "bool", "", "",0
-			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Scaling", "Lcl Scaling", "", "A",1500,1500,1500
-			P: "Visibility Inheritance", "Visibility Inheritance", "", "",0
-		}
-		Shading: Y
-		Culling: "CullingOff"
-	}
-	Model: 6612784640, "Model::90TurnFlat", "Null" {
-		Version: 232
-		Properties70:  {
-			P: "RotationActive", "bool", "", "",1
-			P: "InheritType", "enum", "", "",1
-			P: "Show", "bool", "", "",0
-			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Scaling", "Lcl Scaling", "", "A",1500,1500,1500
-			P: "Visibility Inheritance", "Visibility Inheritance", "", "",0
-		}
-		Shading: Y
-		Culling: "CullingOff"
-	}
-	Model: 6612781952, "Model::90TurnUPCurvy", "Null" {
-		Version: 232
-		Properties70:  {
-			P: "RotationActive", "bool", "", "",1
-			P: "InheritType", "enum", "", "",1
-			P: "Show", "bool", "", "",0
-			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Scaling", "Lcl Scaling", "", "A",1500,1500,1500
-			P: "Visibility Inheritance", "Visibility Inheritance", "", "",0
-		}
-		Shading: Y
-		Culling: "CullingOff"
-	}
-	Model: 6126037760, "Model::Straight", "Mesh" {
+	Model: 6072759680, "Model::Straight", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -393,7 +304,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Material: 6374812160, "Material::road", "" {
+	Material: 5917684736, "Material::road", "" {
 		Version: 102
 		ShadingModel: "phong"
 		MultiLayer: 0
@@ -417,44 +328,14 @@ Objects:  {
 
 Connections:  {
 	
-	;Model::loop, Model::RootNode
-	C: "OO",6612792704,0
-	
-	;Model::file1, Model::RootNode
-	C: "OO",6612790016,0
-	
-	;Model::90TurnUp, Model::RootNode
-	C: "OO",6612787328,0
-	
-	;Model::90TurnFlat, Model::RootNode
-	C: "OO",6612784640,0
-	
-	;Model::90TurnUPCurvy, Model::RootNode
-	C: "OO",6612781952,0
-	
 	;Model::Straight, Model::RootNode
-	C: "OO",6126037760,0
-	
-	;NodeAttribute::loop, Model::loop
-	C: "OO",6613268800,6612792704
-	
-	;NodeAttribute::file1, Model::file1
-	C: "OO",6613269184,6612790016
-	
-	;NodeAttribute::90TurnUp, Model::90TurnUp
-	C: "OO",6613269568,6612787328
-	
-	;NodeAttribute::90TurnFlat, Model::90TurnFlat
-	C: "OO",6613269952,6612784640
-	
-	;NodeAttribute::90TurnUPCurvy, Model::90TurnUPCurvy
-	C: "OO",6613270336,6612781952
+	C: "OO",6072759680,0
 	
 	;Geometry::Straight, Model::Straight
-	C: "OO",6594168832,6126037760
+	C: "OO",6067100032,6072759680
 	
 	;Material::road, Model::Straight
-	C: "OO",6374812160,6126037760
+	C: "OO",5917684736,6072759680
 }
 ;Takes section
 ;----------------------------------------------------
