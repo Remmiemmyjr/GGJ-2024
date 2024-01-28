@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     public CinemachineVirtualCamera cmvCam;
     float rotDir;
-    public float rotSpeed;
+    public float rotSpeed = 2.0f;
 
     public int maxBullets = 6;
     [HideInInspector]
@@ -24,9 +24,10 @@ public class PlayerController : MonoBehaviour
     public float reloadTime = 2.0f;
 
     [SerializeField]
-    float accelerationRate = 30.0f;
+    float accelerationRate = 45.0f;
     [SerializeField]
-    float maxSpeed = 10.0f;
+    float maxSpeed = 20.0f;
+    public float smoothDamp = 0.99f;
 
     [SerializeField]
     float speedBoost = 50.0f;
@@ -35,13 +36,14 @@ public class PlayerController : MonoBehaviour
     float currTime;
 
     [SerializeField]
-    float jumpBoostForce = 3.0f;
-    float jumpCoolDown = 1f;
+    float jumpBoostForce = 15.0f;
+    float jumpCoolDown = 0.25f;
     float lastJumpTime = -1f;
 
     bool isSpeedBoosting;
     bool canSpeedBoost;
     bool canReload;
+
 
     // Start is called before the first frame update
     void Start()
@@ -53,6 +55,7 @@ public class PlayerController : MonoBehaviour
         bullets = maxBullets;
         canReload = true;
     }
+
 
     // Update is called once per frame
     void FixedUpdate()
@@ -84,72 +87,103 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     private void LateUpdate()
     {
         RotateCamera();
     }
+
 
     public void OnMovementInput(InputAction.CallbackContext ctx)
     {
         dirVal = ctx.ReadValue<float>();
     }
 
+
     public void OnSpeedBoostInput(InputAction.CallbackContext ctx)
     {
         if (bullets <= 0) return;
-        if (Time.realtimeSinceStartup - lastJumpTime < jumpCoolDown) return;
-
-
+        
         if (currMoveVec != Vector3.zero && canSpeedBoost && bullets > 0)
         {
             canSpeedBoost = false;
             isSpeedBoosting = true;
-            rb.velocity = new Vector3(rb.velocity.x * speedBoost, rb.velocity.y, rb.velocity.z * speedBoost);
+            Vector3 forwardVec = cmvCam.transform.forward.normalized;
+            rb.velocity = new Vector3(forwardVec.x * speedBoost, rb.velocity.y, forwardVec.z * speedBoost);
 
-            lastJumpTime = Time.realtimeSinceStartup;
-
+            
             // BULLETS
             bullets -= 1;
             Debug.Log(bullets);
         }
     }
 
+
     public void OnJumpBoostInput(InputAction.CallbackContext ctx)
     {
         if (ctx.canceled || bullets <= 0) return;
+        if (Time.realtimeSinceStartup - lastJumpTime < jumpCoolDown) return;
 
         if (ctx.performed && bullets > 0)
         {
             Vector3 jumpVec = new Vector3(rb.velocity.x, jumpBoostForce, rb.velocity.z);
             rb.velocity = jumpVec;
 
+            lastJumpTime = Time.realtimeSinceStartup;
+
+
             // BULLETS
             bullets -= 1;
             Debug.Log(bullets);
         }
     }
+
+
     public void OnRotateInput(InputAction.CallbackContext ctx)
     {
         rotDir = ctx.ReadValue<float>();
     }
+
 
     void MovePlayer()
     {
         currMoveVec = new Vector3(rb.velocity.x, 0, rb.velocity.z);
 
         rb.AddForce((cmvCam.transform.forward * dirVal) * speed);
-        if (currMoveVec.magnitude > maxSpeed && !isSpeedBoosting)
+        if (currMoveVec.magnitude > maxSpeed)
         {
             currMoveVec = currMoveVec.normalized * maxSpeed;
             Vector3 newVel = new Vector3(currMoveVec.x, rb.velocity.y, currMoveVec.z);
-            rb.velocity = newVel;
+
+            if (!isSpeedBoosting)
+            { 
+                rb.velocity = newVel; 
+            }
+
+            if(isSpeedBoosting)
+            {
+                Mathf.Lerp(rb.velocity.x, newVel.x, 0.5f);
+                Mathf.Lerp(rb.velocity.z, newVel.z, 0.5f);
+            }
+        }
+
+        // if player is not giving move input or falling, slow it to a stop
+        if(dirVal == 0 && Mathf.Abs(rb.velocity.y) <= 0.25f )
+        {
+            rb.velocity *= smoothDamp;
+            if (rb.velocity.sqrMagnitude < 0.1f)
+            {
+                rb.velocity = Vector2.zero;
+            }
         }
     }
+
 
     void RotateCamera()
     {
         cmvCam.transform.RotateAround(gameObject.transform.position, Vector3.up, rotDir * rotSpeed);
     }
+
 
     IEnumerator ReloadGun()
     {
