@@ -155,7 +155,8 @@ public class PlayerController : MonoBehaviour
             gunParticles.Play();
             Debug.Log(bullets);
             //AkSoundEngine.PostEvent("Play_Gunshot", this.gameObject);
-            Gun.PlayOneShot(gunClips[Random.Range(0, gunClips.Length)]);
+            //Gun.PlayOneShot(gunClips[Random.Range(0, gunClips.Length)]);
+            Gun.Play();
 
             reloadUIAnimator.SetInteger("RevolverAmmo", bullets);
         }

@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	4205244797	Test_Yoda			\Default Work Unit\Test_Yoda	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	569312001	Lego yoda death sound	C:\GGJ 2024\GGJ-2024\Tumbleweed-2024\Tumbleweed-2024_WwiseProject\.cache\Mac\SFX\Lego yoda death sound_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Utility\Lego yoda death sound		247236
-
