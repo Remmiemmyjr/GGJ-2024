@@ -10,22 +10,31 @@ public class Hat : MonoBehaviour
     public Vector3 offset;
     public CinemachineVirtualCamera cmvCam;
 
-    public float amplitude = 1.0f; 
-    public float frequency = 1.0f;
+    public float amplitude = 0.1f; 
+    public float frequency = 0.1f;
 
-    private Vector3 initialPosition;
-
+    float yOffset;
 
     private void Start()
     {
-        initialPosition = transform.position + offset;
+        //initialPosition = transform.position + offset;
     }
 
     private void Update()
     {
-        float yOffset = amplitude * Mathf.Sin(Time.time * frequency);
-        //transform.position = target.position + offset;
-        transform.position = initialPosition + new Vector3(transform.position.x, yOffset, transform.position.z);
+        if (Mathf.Abs(target.gameObject.GetComponent<PlayerController>().currMoveVec.magnitude) > 5f)
+        {
+            yOffset = amplitude * Mathf.Sin(Time.time * frequency);
+        }
+        else
+        {
+            yOffset = 0;
+        }
+
+        Vector3 targetPosition = new Vector3(target.position.x, (target.position.y + yOffset) + offset.y, target.position.z);
+
+        // Apply the offset to the hat's position relative to the target
+        transform.position = targetPosition;
         transform.rotation = cmvCam.transform.rotation;
     }
 }

@@ -1351,6 +1351,8 @@ MonoBehaviour:
   target: {fileID: 819383384}
   offset: {x: 0.5, y: 0, z: 0}
   cmvCam: {fileID: 1510581163}
+  amplitude: 1
+  frequency: 1
 --- !u!1001 &706639316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1722,6 +1724,16 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 819383384}
+    - target: {fileID: 1478201741588719243, guid: f43da7c2bc71e184fbed9d0f9140543a,
+        type: 3}
+      propertyPath: amplitude
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478201741588719243, guid: f43da7c2bc71e184fbed9d0f9140543a,
+        type: 3}
+      propertyPath: frequency
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5324655982308533793, guid: f43da7c2bc71e184fbed9d0f9140543a,
         type: 3}
       propertyPath: m_RootOrder
@@ -1781,6 +1793,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tumblo_Hat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143184988429928519, guid: f43da7c2bc71e184fbed9d0f9140543a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9062102594169992470, guid: f43da7c2bc71e184fbed9d0f9140543a,
         type: 3}

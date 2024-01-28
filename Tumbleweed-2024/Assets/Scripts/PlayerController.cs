@@ -7,7 +7,8 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody rb;
-    Vector3 currMoveVec;
+    [HideInInspector]
+    public Vector3 currMoveVec;
 
     float dirVal;
     float speed;
