@@ -55,10 +55,15 @@ public class PlayerController : MonoBehaviour
     float jumpCoolDown = 0.25f;
     float lastJumpTime = -1f;
 
-
+    // Boost values
     bool isSpeedBoosting;
     bool canSpeedBoost;
     bool canReload;
+
+    // Reset variables
+    [HideInInspector]
+    Vector3 resetPosition;
+    float timeOnReset = 0.0f;
 
 
     // Start is called before the first frame update
@@ -71,6 +76,8 @@ public class PlayerController : MonoBehaviour
         bullets = maxBullets;
         canReload = true;
         normalFOV = cmvCam.m_Lens.FieldOfView;
+
+        resetPosition = transform.position;
     }
 
 
@@ -247,5 +254,15 @@ public class PlayerController : MonoBehaviour
     void StopDustParticles()
     {
         dustParticles.Stop();
+    }
+
+    public void ResetPlayer()
+    {
+        // Reset position
+        rb.velocity = Vector3.zero;
+        transform.position = resetPosition;
+
+        // Reset time
+        GameObject.FindGameObjectWithTag("Timer").GetComponent<Timer>().SetTime(timeOnReset);
     }
 }
