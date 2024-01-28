@@ -44,6 +44,20 @@ public class PlayerController : MonoBehaviour
     bool canSpeedBoost;
     bool canReload;
 
+    // Layer where the ground is placed
+    public LayerMask groundLayer;
+    // Maximum pitch angle
+    public float maxPitchAngle = 80f;
+    // Minimum pitch angle
+    public float minPitchAngle = -80f;
+    // Speed at which pitch angle changes
+    public float pitchSpeed = 5f;
+    // Distance for raycast
+    public float raycastDistance = 10f;
+
+    // Current pitch angle
+    private float currentPitchAngle = 0f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -85,6 +99,21 @@ public class PlayerController : MonoBehaviour
             canReload = false;
             StartCoroutine(ReloadGun());
         }
+
+        // Pitch Adjustment
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, raycastDistance, groundLayer))
+        {
+            // Calculate target pitch angle based on the slope of the ground
+            float targetPitchAngle = Mathf.Clamp(Vector3.Angle(hit.normal, transform.forward) - 90f, minPitchAngle, maxPitchAngle);
+
+            // Interpolate the current pitch angle towards the target angle
+            currentPitchAngle = Mathf.Lerp(currentPitchAngle, targetPitchAngle, Time.deltaTime * pitchSpeed);
+        }
+
+        // Apply the pitch angle to the camera
+        Quaternion targetRotation = Quaternion.Euler(currentPitchAngle, cmvCam.transform.eulerAngles.y, cmvCam.transform.eulerAngles.z);
+        cmvCam.transform.rotation = targetRotation;
     }
 
 
