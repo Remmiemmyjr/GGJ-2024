@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     [Header("--------VISUALS--------")]
     public Animator reloadUIAnimator;
     public ParticleSystem dustParticles;
+    public ParticleSystem gunParticles;
 
 
     [Header("--------CAMERA---------")]
@@ -142,6 +143,7 @@ public class PlayerController : MonoBehaviour
             
             // BULLETS
             bullets -= 1;
+            gunParticles.Play();
             Debug.Log(bullets);
 
             reloadUIAnimator.SetInteger("RevolverAmmo", bullets);
@@ -164,6 +166,7 @@ public class PlayerController : MonoBehaviour
 
             // BULLETS
             bullets -= 1;
+            gunParticles.Play();
             Debug.Log(bullets);
 
             reloadUIAnimator.SetInteger("RevolverAmmo", bullets);
