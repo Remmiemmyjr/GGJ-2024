@@ -234,7 +234,7 @@ public class PlayerController : MonoBehaviour
 
     void EmitParticles()
     {
-        if (currMoveVec != Vector3.zero && rb.velocity.y == 0)
+        if (Mathf.Abs(currMoveVec.magnitude) > 5f && rb.velocity.y == 0)
             CreateDustParticles();
         else
             StopDustParticles();
