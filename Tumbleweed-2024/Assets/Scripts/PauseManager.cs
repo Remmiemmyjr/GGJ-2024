@@ -13,7 +13,7 @@ public class PauseManager : MonoBehaviour
     [SerializeField]
     private GameObject pauseMenu;
     [SerializeField]
-    private GameObject optionsMenu;
+    private GameObject settingsMenu;
     [SerializeField]
     private PlayerInput gameplayControls;
 
@@ -34,8 +34,7 @@ public class PauseManager : MonoBehaviour
             gameplayControls.enabled = false;
 
             inSubMenu = false;
-            if (optionsMenu.activeSelf)
-                optionsMenu.SetActive(false);
+            settingsMenu.SetActive(false);
             pauseMenu.SetActive(true);
             Time.timeScale = 0.0f;
         }
@@ -45,10 +44,8 @@ public class PauseManager : MonoBehaviour
             gameplayControls.enabled = true;
 
             inSubMenu = false;
-            if (optionsMenu.activeSelf)
-                optionsMenu.SetActive(false);
-            if (pauseMenu.activeSelf)
-                pauseMenu.SetActive(false);
+            settingsMenu.SetActive(false);
+            pauseMenu.SetActive(false);
             Time.timeScale = 1.0f;
         }
     }
@@ -58,13 +55,13 @@ public class PauseManager : MonoBehaviour
         TogglePause();
     }
 
-    public void OptionsButton()
+    public void SettingsButton()
     {
         // Update variables
         inSubMenu = true;
 
         // Toggle between menus
-        optionsMenu.SetActive(true);
+        settingsMenu.SetActive(true);
         pauseMenu.SetActive(false);
     }
 
@@ -74,7 +71,7 @@ public class PauseManager : MonoBehaviour
         inSubMenu = false;
 
         // Toggle between menus
-        optionsMenu.SetActive(false);
+        settingsMenu.SetActive(false);
         pauseMenu.SetActive(true);
     }
 
