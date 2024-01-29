@@ -58,6 +58,6 @@ Material:
     - _TexSpeed: 0.5
     - _WaterDepth: 10
     m_Colors:
-    - _DeepColor: {r: 0.004805886, g: 0.59335256, b: 0.764151, a: 0.62352943}
-    - _ShallowColor: {r: 0.10590947, g: 0.9025352, b: 0.9622642, a: 0.4862745}
+    - _DeepColor: {r: 0.9543363, g: 0.86477983, b: 1, a: 0.62352943}
+    - _ShallowColor: {r: 0.5921513, g: 0.11572914, b: 0.7830189, a: 0.4862745}
   m_BuildTextureStacks: []
