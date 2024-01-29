@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class MainMenuManager : MonoBehaviour
     private Slider settingsCameraSensSlider;
     [SerializeField]
     private TMPro.TextMeshProUGUI settingsCameraSensText;
+
+    [SerializeField]
+    private VideoPlayer introCutscene;
+    [SerializeField]
+    private GameObject cutsceneBorder;
 
     [HideInInspector]
     public bool inSubMenu = false;
@@ -75,7 +81,9 @@ public class MainMenuManager : MonoBehaviour
 
     public void PlayButton()
     {
-        SceneManager.LoadScene("MainScene");
+        introCutscene.Play();
+        cutsceneBorder.SetActive(true);
+        StartCoroutine(IntroCutsceneSequence());
     }
 
     public void SettingsButton()
@@ -120,5 +128,11 @@ public class MainMenuManager : MonoBehaviour
     {
         // Update variables
         inSubMenu = false;
+    }
+
+    private IEnumerator IntroCutsceneSequence()
+    {
+        yield return new WaitForSeconds((float)introCutscene.length);
+        SceneManager.LoadScene("MainScene");
     }
 }
