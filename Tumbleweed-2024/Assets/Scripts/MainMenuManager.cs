@@ -43,6 +43,8 @@ public class MainMenuManager : MonoBehaviour
     private VideoPlayer introCutscene;
     [SerializeField]
     private GameObject cutsceneBorder;
+    [SerializeField]
+    private GameObject renderImg;
 
     [HideInInspector]
     public bool inSubMenu = false;
@@ -65,6 +67,9 @@ public class MainMenuManager : MonoBehaviour
         settingsCameraSensText.text = "" + cameraSense;
         settingsCameraSensSlider.value = cameraSense;
 
+        renderImg.SetActive(false);
+        cutsceneBorder.SetActive(false);
+        introCutscene.Stop();
     }
 
     private void Update()
@@ -81,6 +86,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void PlayButton()
     {
+        renderImg.SetActive(true);
         introCutscene.Play();
         cutsceneBorder.SetActive(true);
         StartCoroutine(IntroCutsceneSequence());

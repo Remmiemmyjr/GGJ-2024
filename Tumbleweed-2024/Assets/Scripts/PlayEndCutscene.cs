@@ -10,6 +10,18 @@ public class PlayEndCutscene : MonoBehaviour
     private VideoPlayer outroCutscene;
     [SerializeField]
     private GameObject cutsceneBorder;
+    [SerializeField]
+    private GameObject renderImg;
+    [SerializeField]
+    private GameObject AUDIOMAIN;
+
+    private void Start()
+    {
+        AUDIOMAIN.SetActive(true);
+        cutsceneBorder.SetActive(false);
+        outroCutscene.Stop();
+        renderImg.SetActive(false);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,8 +29,10 @@ public class PlayEndCutscene : MonoBehaviour
         if (other.tag != "Player")
             return;
 
+        renderImg.SetActive(true);
         outroCutscene.Play();
         cutsceneBorder.SetActive(true);
+        AUDIOMAIN.SetActive(false);
         StartCoroutine(OutroCutsceneSequence());
     }
 
