@@ -37,6 +37,7 @@ Transform:
   - {fileID: 5142827881480343704}
   - {fileID: 7126156228083821633}
   - {fileID: 8363100523109089536}
+  - {fileID: 1949918993285826339}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -134,6 +135,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: aaa5dfc78009e5342bb67f700f83c098, type: 3}
   - {fileID: 8300000, guid: 42462dae0e4af1645b381dbebbba5141, type: 3}
   - {fileID: 8300000, guid: bf248bc136238414185ca75c577a996f, type: 3}
+  ps: {fileID: 1276237954013501175}
 --- !u!82 &4076841455962329060
 AudioSource:
   m_ObjectHideFlags: 0
@@ -292,7 +294,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: a0a94b7bcbdb6d244a1f44be63fdcbf3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -362,7 +364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5030172281056576524}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.42, y: -0.25, z: 0}
+  m_LocalPosition: {x: 0.5075002, y: -0.25, z: 0}
   m_LocalScale: {x: 0.014964365, y: 0.5, z: 0.26144904}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -397,7 +399,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: a0a94b7bcbdb6d244a1f44be63fdcbf3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -529,6 +531,107 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4671437640596273011}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6572763958676506502
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6535552314434739588}
+    m_Modifications:
+    - target: {fileID: 1937448027210597848, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_Name
+      value: confetti_cannon_placement 1 1 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6332998842845591517, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92916
+      objectReference: {fileID: 0}
+    - target: {fileID: 6332998842845591517, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.36967796
+      objectReference: {fileID: 0}
+    - target: {fileID: 6332998842845591517, guid: 215ae8984f803eb42b3474cd92f71ae0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -43.392
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 1204546897209073597, guid: 215ae8984f803eb42b3474cd92f71ae0, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 215ae8984f803eb42b3474cd92f71ae0, type: 3}
+--- !u!198 &1276237954013501175 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5368640775741493617, guid: 215ae8984f803eb42b3474cd92f71ae0,
+    type: 3}
+  m_PrefabInstance: {fileID: 6572763958676506502}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1949918993285826339 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4627630042228293797, guid: 215ae8984f803eb42b3474cd92f71ae0,
+    type: 3}
+  m_PrefabInstance: {fileID: 6572763958676506502}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8324071446715328235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -555,7 +658,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: dcfa45e9465ab364c844415185b5fb62,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.4211001
+      value: 0.5086001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dcfa45e9465ab364c844415185b5fb62,
         type: 3}
