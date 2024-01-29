@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
+    public AudioSource checkpoint;
+    public AudioClip[] checkclips;
+
     bool checkPointReached = false;
 
     // Storage Variables
@@ -23,6 +26,7 @@ public class CheckPoint : MonoBehaviour
 
         // Snapshot the time at the checkpoint
         time = GameObject.FindGameObjectWithTag("Timer").GetComponent<Timer>().GetTime();
+        checkpoint.PlayOneShot(checkclips[Random.Range(0, checkclips.Length)]);  
 
         // Set the position and time attributes within the player controller
         other.GetComponent<PlayerController>().resetPosition = checkPointPosition - new Vector3(0.0f, (transform.localScale.y / 4.0f), 0.0f);
