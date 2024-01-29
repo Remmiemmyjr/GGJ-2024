@@ -5666,6 +5666,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 698741081}
   m_SourcePrefab: {fileID: 100100000, guid: 90806bfb2f01652429fbc0391fd9e791, type: 3}
+--- !u!1 &550147849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5833030311025252101, guid: e7964ba0ad5d1344babeeb8ffb168233,
+    type: 3}
+  m_PrefabInstance: {fileID: 780327773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &567111295 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 469d8534efb50594aa1915017645fbac,
@@ -15121,6 +15127,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7320862097266161004, guid: 117b37c052164d4478ab6bcbfdfb88f5,
+        type: 3}
+      propertyPath: outroCutscene
+      value: 
+      objectReference: {fileID: 1766226356}
+    - target: {fileID: 7320862097266161004, guid: 117b37c052164d4478ab6bcbfdfb88f5,
+        type: 3}
+      propertyPath: cutsceneBorder
+      value: 
+      objectReference: {fileID: 550147849}
     - target: {fileID: 8484405775598102461, guid: 117b37c052164d4478ab6bcbfdfb88f5,
         type: 3}
       propertyPath: m_Name
@@ -15716,6 +15732,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae6a6abaf60930441b3c6832e0473779, type: 3}
+--- !u!328 &1766226356 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 2940499338845941338, guid: e7964ba0ad5d1344babeeb8ffb168233,
+    type: 3}
+  m_PrefabInstance: {fileID: 780327773}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1771642218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3779745573541866595, guid: d66541072c306b74681ef6409a4327ff,
