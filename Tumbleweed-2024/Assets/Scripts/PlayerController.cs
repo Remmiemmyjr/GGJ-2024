@@ -47,6 +47,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float maxSpeed = 20.0f;
     public float smoothDamp = 0.95f;
+    [SerializeField]
+    private PlayerInput gameplayControls;
 
 
     [Header("------SPEED BOOST------")]
@@ -87,6 +89,9 @@ public class PlayerController : MonoBehaviour
         normalFOV = cmvCam.m_Lens.FieldOfView;
 
         resetPosition = transform.position;
+
+        // Ensure player can move
+        gameplayControls.enabled = true;
     }
 
 
