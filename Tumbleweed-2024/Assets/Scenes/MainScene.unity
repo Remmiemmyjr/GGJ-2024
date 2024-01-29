@@ -697,6 +697,11 @@ PrefabInstance:
       propertyPath: reloadUIAnimator
       value: 
       objectReference: {fileID: 780327774}
+    - target: {fileID: 2188130837886181326, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4124864198511699467, guid: 3d7d9c3f9c61c5b47b697107354d0d73,
         type: 3}
       propertyPath: m_RootOrder
